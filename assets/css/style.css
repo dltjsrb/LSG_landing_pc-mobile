@@ -1,0 +1,339 @@
+@import url(commons.css);
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    overflow-x: hidden;
+   
+}
+
+
+
+.header_wrap {
+    width: 100%;
+    min-height: 81px;
+    background-color: #2498F2;
+    padding: 14px 20px;
+}
+
+/* 
+   내부 네비게이션
+   - 기존 고정 width 대신 max-width 사용
+   - 반응형에서 줄어들 수 있도록 수정
+*/
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1198px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+.lsg_Logo {
+    flex-shrink: 0;
+}
+
+.lsg_Logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.gnb {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+  
+.menu_btn {
+    display: none;
+}
+.navi {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.navi a {
+
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+/* 
+   우측 버튼 영역
+*/
+.start {
+    flex-shrink: 0;
+}
+
+.start_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #83C9FD;
+
+    padding: 10px 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.kv {
+    min-height: calc(100vh - 81px);
+    background-image: url(../images/icon/lsgkivy.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+
+.kv-content {
+    width: 100%;
+    max-width: 1198px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+
+.kv-title {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+
+.pass-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(4px);
+}
+
+
+.kv-title h1 {
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+}
+
+
+.price-card {
+    width: 100%;
+    max-width: 605px;
+    padding: 42px 40px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+/* 
+   가격 라인
+*/
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    line-height: 1;
+}
+
+
+.price-row span:first-child {
+    text-decoration: line-through;
+}
+
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    line-height: 1.5;
+    margin-top: 4px;
+}
+
+
+.apply-btn {
+    width: 100%;
+    min-height: 56px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #106DEA 0%, #83C9FD 100%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.apply-btn:hover {
+    transform: scale(1.02);
+}
+
+
+
+@media (max-width: 1024px) {
+    .header_wrap {
+        padding: 14px 24px;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+
+    .navi {
+        gap: 16px;
+    }
+
+    .navi a {
+        font-size: 14px;
+    }
+
+    .start_btn {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+
+    .kv {
+        padding: 56px 24px;
+        background-position: 62% center;
+    }
+
+    .kv-content {
+        gap: 28px;
+    }
+
+    .kv-title {
+        gap: 18px;
+    }
+
+    .price-card {
+        max-width: 520px;
+        padding: 34px 28px;
+        border-radius: 24px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header_wrap {
+        min-height: 56px;
+        padding: 0;
+    }
+
+    .nav {
+        max-width: 100%;
+        min-height: 56px;
+        padding: 0 16px;
+        gap: 0;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .menu_btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        z-index: 2;
+    }
+
+  
+    .gnb {
+        display: none;
+    }
+
+    .lsg_Logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lsg_Logo img {
+        width: 34px;
+        height: auto;
+    }
+
+    
+    .start {
+        margin-left: auto;
+    }
+
+    .start_btn {
+        font-size: 14px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background-color: rgba(255, 255, 255, 0.28);
+        min-height: 30px;
+    }
+
+    .kv {
+        min-height: auto;
+        padding: 28px 16px 40px;
+        align-items: flex-start;
+        background-position: 68% center;
+    }
+
+    .kv-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 34px;
+    }
+
+    .kv-title {
+        gap: 14px;
+    }
+
+    .pass-box {
+        min-height: 34px;
+        padding: 0 12px;
+    }
+
+    .price-card {
+        max-width: 100%;
+        padding: 28px 20px;
+        border-radius: 20px;
+        gap: 12px;
+    }
+
+    .price-row {
+        gap: 8px;
+    }
+
+    .price-list {
+        gap: 4px;
+    }
+
+    .apply_btn {
+        min-height: 48px;
+        margin-top: 6px;
+    }
+}
