@@ -3,18 +3,15 @@
 body {
     font-family: 'Pretendard', sans-serif;
     overflow-x: hidden;
-
 }
 
-
-
+/* ========================= HEADER (변경 없음) ========================= */
 .header_wrap {
     width: 100%;
     min-height: 81px;
     background-color: #2498F2;
     padding: 14px 20px;
 }
-
 
 .nav {
     display: flex;
@@ -26,10 +23,7 @@ body {
     gap: 20px;
 }
 
-
-.lsg_Logo {
-    flex-shrink: 0;
-}
+.lsg_Logo { flex-shrink: 0; }
 
 .lsg_Logo img {
     display: block;
@@ -37,17 +31,13 @@ body {
     height: auto;
 }
 
-
 .gnb {
     flex: 1 1 auto;
     display: flex;
     justify-content: center;
 }
 
-
-.menu_btn {
-    display: none;
-}
+.menu_btn { display: none; }
 
 .navi {
     display: flex;
@@ -56,32 +46,25 @@ body {
 }
 
 .navi a {
-
     text-decoration: none;
     line-height: 1.5;
 }
 
-
-.start {
-    flex-shrink: 0;
-}
+.start { flex-shrink: 0; }
 
 .start_btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     background-color: #83C9FD;
-
     padding: 10px 16px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
 }
 
-
-
-.kv {
+/* ========================= KV (변경 없음) ========================= */
+.hero {
     min-height: 603px;
     background-image: url(../images/icon/lsgkivy.webp);
     background-repeat: no-repeat;
@@ -92,8 +75,7 @@ body {
     padding: 60px 20px;
 }
 
-
-.kv-content {
+.hero-inner {
     width: 100%;
     max-width: 1198px;
     margin: 0 auto;
@@ -103,8 +85,7 @@ body {
     gap: 48px;
 }
 
-
-.kv-title {
+.hero-title {
     flex: 1 1 0;
     min-width: 0;
     display: flex;
@@ -113,8 +94,7 @@ body {
     gap: 22px;
 }
 
-
-.pass-box {
+.badge-box {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -126,12 +106,10 @@ body {
     backdrop-filter: blur(4px);
 }
 
-
-.kv-title h1 {
+.hero-title h1 {
     line-height: 0.9;
     letter-spacing: -0.03em;
 }
-
 
 .price-card {
     width: 100%;
@@ -141,16 +119,12 @@ body {
     background: rgba(255, 255, 255, 0.52);
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
     display: flex;
     flex-direction: column;
     gap: 14px;
     flex-shrink: 0;
 }
 
-/* 
-   가격 라인
-*/
 .price-row {
     display: flex;
     align-items: center;
@@ -159,11 +133,7 @@ body {
     line-height: 1;
 }
 
-
-.price-row span:first-child {
-    text-decoration: line-through;
-}
-
+.price-row span:first-child { text-decoration: line-through; }
 
 .price-list {
     display: flex;
@@ -172,7 +142,6 @@ body {
     line-height: 1.5;
     margin-top: 4px;
 }
-
 
 .apply-btn {
     width: 100%;
@@ -185,18 +154,16 @@ body {
     transition: transform 0.3s ease;
 }
 
-.apply-btn:hover {
-    transform: scale(1.02);
-}
+.apply-btn:hover { transform: scale(1.02); }
 
-.three-page {
+/* ========================= PAGE 2: 환급 섹션 ========================= */
+.page-2 {
     min-height: 697px;
     background: #fff;
     padding: 120px 20px;
 }
 
-
-.three-content {
+.page-2-inner {
     width: 100%;
     max-width: 1198px;
     margin: 0 auto;
@@ -206,18 +173,14 @@ body {
     gap: 55px;
 }
 
+.page-2-title { width: 100%; }
 
-.three-title {
-    width: 100%;
-}
-
-.three-title-text {
+.page-2-title-text {
     text-align: center;
     line-height: 1.35;
 }
 
-
-.three-main-btn {
+.page-2-big-btn {
     width: 100%;
     max-width: 730px;
     min-height: 297px;
@@ -233,20 +196,16 @@ body {
     line-height: 1.15;
 }
 
-.three-main-btn:hover {
-    transform: scale(1.02);
-}
+.page-2-big-btn:hover { transform: scale(1.02); }
 
-
-.three-sub-btn-group {
+.page-2-btn-group {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-
-.three-sub-btn {
+.page-2-small-btn {
     width: 100%;
     max-width: 480px;
     min-height: 66px;
@@ -261,34 +220,26 @@ body {
     line-height: 1.2;
 }
 
-.four-page {
+/* ========================= PAGE 3: 수석 랭킹 섹션 ========================= */
+.page-3 {
     background: #679CFF;
     padding: 80px 20px 100px;
 }
 
-/* 
-   내부 컨텐츠 폭
-*/
-.four-content {
+.page-3-inner {
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
 }
 
-/* 
-   타이틀 영역
-*/
-.four-title {
+.page-3-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 37px;
 }
 
-/* 
-   상단 작은 타이틀 박스
-*/
-.four-small-text {
+.page-3-title-year {
     min-width: 248px;
     min-height: 48px;
     display: inline-flex;
@@ -299,10 +250,7 @@ body {
     text-align: center;
 }
 
-/* 
-   메인 타이틀 박스
-*/
-.four-big-text {
+.page-3-title-main {
     min-width: 708px;
     min-height: 54px;
     display: inline-flex;
@@ -313,20 +261,14 @@ body {
     text-align: center;
 }
 
-/* 
-   배너 묶음
-*/
-.four-banner-group {
+.page-3-card-group {
     margin-top: 70px;
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
 
-/* 
-   개별 배너 카드
-*/
-.four-banner {
+.page-3-card {
     width: 100%;
     min-height: 250px;
     border-radius: 20px;
@@ -337,10 +279,7 @@ body {
     background: rgba(255, 255, 255, 0.03);
 }
 
-/* 
-   이미지 영역
-*/
-.top-seat-image {
+.page-3-card-photo {
     width: 36.224%;
     min-width: 300px;
     min-height: 250px;
@@ -350,16 +289,13 @@ body {
     flex-shrink: 0;
 }
 
-.top-seat-image img {
+.page-3-card-photo img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-/* 
-   텍스트 영역
-*/
-.text-body {
+.page-3-card-text {
     flex: 1 1 auto;
     min-height: 250px;
     margin-left: 16px;
@@ -370,56 +306,34 @@ body {
     box-sizing: border-box;
 }
 
-/* 
-   배지 그룹
-*/
-.four-badge-group {
+.page-3-badge-group {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-/* 
-   배지 공통
-*/
-.four-badge-1,
-.four-badge-2,
-.four-badge-3 {
+.page-3-badge-1,
+.page-3-badge-2,
+.page-3-badge-3 {
     border-radius: 999px;
     padding: 10px 16px;
     line-height: 1;
     white-space: nowrap;
 }
 
-.four-badge-1 {
-    color: #2a3dff;
-    border: 1px solid #3240ca;
-}
+.page-3-badge-1 { color: #2a3dff; border: 1px solid #3240ca; }
+.page-3-badge-2 { color: #fc5eff; border: 1px solid #cb13db; }
+.page-3-badge-3 { color: #42ffba; border: 1px solid #00db8b; }
 
-.four-badge-2 {
-    color: #fc5eff;
-    border: 1px solid #cb13db;
-}
+.page-3-card-right { justify-content: space-between; }
 
-.four-badge-3 {
-    color: #42ffba;
-    border: 1px solid #00db8b;
-}
-
-/* 
-   오른쪽 이미지 카드
-*/
-.four-banner-right {
-    justify-content: space-between;
-}
-
-.four-banner-right .text-body {
+.page-3-card-right .page-3-card-text {
     margin-left: 66px;
     padding-right: 16px;
 }
 
-.top-seat-image-right {
+.page-3-card-photo-right {
     width: 32.143%;
     min-width: 260px;
     justify-content: flex-end;
@@ -427,26 +341,11 @@ body {
     box-sizing: border-box;
 }
 
-/* 
-   텍스트 간격
-*/
-.achievement-name {
-    margin-top: 18px;
-}
+.page-3-card-name  { margin-top: 18px; }
+.page-3-card-school { margin-top: 6px; }
+.page-3-card-review { margin-top: 14px; line-height: 1.5; }
 
-.achievement-school {
-    margin-top: 6px;
-}
-
-.achievement-review {
-    margin-top: 14px;
-    line-height: 1.5;
-}
-
-/* 
-   재생 버튼
-*/
-.circe-play-btn {
+.page-3-card-play-btn {
     width: 34px;
     height: 34px;
     margin-top: 14px;
@@ -458,7 +357,7 @@ body {
     flex-shrink: 0;
 }
 
-.circe-play-btn::before {
+.page-3-card-play-btn::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -469,10 +368,8 @@ body {
     border-left: 10px solid #fff;
 }
 
-/* =========================
-   FOUR RECORD
-   ========================= */
-.four-record-wrap {
+/* ========================= PAGE 3: 실적 박스 ========================= */
+.page-3-record {
     width: 100%;
     margin-top: 56px;
     padding: 36px 40px 42px;
@@ -480,18 +377,18 @@ body {
     background: linear-gradient(90deg, #4C63F6 0%, #4A5EF1 45%, #5064F4 100%);
 }
 
-.four-record-title-group {
+.page-3-record-title-group {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.four-record-sub-title {
+.page-3-record-subtitle {
     text-align: center;
     line-height: 1.4;
 }
 
-.four-record-line {
+.page-3-record-line {
     width: 200px;
     height: 3px;
     margin-top: 12px;
@@ -499,14 +396,14 @@ body {
     background: rgba(255,255,255,0.95);
 }
 
-.four-record-list {
+.page-3-record-list {
     margin-top: 34px;
     display: flex;
     justify-content: center;
     gap: 90px;
 }
 
-.four-record-item {
+.page-3-record-item {
     flex: 1 1 0;
     max-width: 320px;
     display: flex;
@@ -515,139 +412,93 @@ body {
     text-align: center;
 }
 
-
-
-.four-record-label {
+.page-3-record-label {
     margin-top: 10px;
     line-height: 1.2;
 }
 
-.four-record-number {
+.page-3-record-number {
     margin-top: 8px;
     line-height: 1;
     color: #FFC325;
 }
 
-.four-record-desc {
-    margin-top: 18px;
+.page-3-record-text {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
     line-height: 1.7;
     opacity: 0.95;
 }
 
-
+/* ========================= TABLET (1024px) ========================= */
 @media (max-width: 1024px) {
-    .header_wrap {
-        padding: 14px 24px;
-    }
+    .header_wrap { padding: 14px 24px; }
+    .nav { gap: 16px; }
+    .navi { gap: 16px; }
+    .navi a { font-size: 14px; }
+    .start_btn { font-size: 15px; padding: 10px 14px; }
 
-    .nav {
-        gap: 16px;
-    }
-
-    .navi {
-        gap: 16px;
-    }
-
-    .navi a {
-        font-size: 14px;
-    }
-
-    .start_btn {
-        font-size: 15px;
-        padding: 10px 14px;
-    }
-
-    .kv {
+    .hero {
         padding: 56px 24px;
         background-position: 62% center;
     }
-
-    .kv-content {
-        gap: 28px;
-    }
-
-    .kv-title {
-        gap: 18px;
-    }
-
+    .hero-inner { gap: 28px; }
+    .hero-title { gap: 18px; }
     .price-card {
         max-width: 520px;
         padding: 34px 28px;
         border-radius: 24px;
     }
 
-    .three-page {
-        padding: 100px 24px;
-    }
-
-    .three-content {
-        gap: 40px;
-    }
-
-    .three-main-btn {
+    .page-2 { padding: 100px 24px; }
+    .page-2-inner { gap: 40px; }
+    .page-2-big-btn {
         max-width: 640px;
         min-height: 240px;
         border-radius: 36px;
     }
-
-    .three-sub-btn {
+    .page-2-small-btn {
         max-width: 420px;
         min-height: 60px;
     }
-     .four-page {
-        padding: 72px 24px 90px;
-    }
 
-    .four-title {
-        gap: 24px;
-    }
-
-    .four-big-text {
+    .page-3 { padding: 72px 24px 90px; }
+    .page-3-title { gap: 24px; }
+    .page-3-title-main {
         min-width: auto;
         width: auto;
         max-width: 100%;
     }
-
-    .four-banner {
-        min-height: 230px;
-    }
-
-    .top-seat-image {
+    .page-3-card { min-height: 230px; }
+    .page-3-card-photo {
         min-width: 240px;
         min-height: 230px;
     }
-
-    .text-body {
+    .page-3-card-text {
         min-height: 230px;
         padding: 28px 20px 24px 0;
     }
-
-    .four-banner-right .text-body {
-        margin-left: 34px;
-    }
-
-    .top-seat-image-right {
+    .page-3-card-right .page-3-card-text { margin-left: 34px; }
+    .page-3-card-photo-right {
         min-width: 220px;
         padding-right: 20px;
     }
-
-    .four-record-wrap {
+    .page-3-record {
         padding: 32px 28px 36px;
         border-radius: 24px;
     }
-
-    .four-record-list {
-        gap: 40px;
-    }
+    .page-3-record-list { gap: 40px; }
 }
 
-
+/* ========================= MOBILE (768px) ========================= */
 @media (max-width: 768px) {
     .header_wrap {
         min-height: 56px;
         padding: 0;
     }
-
     .nav {
         max-width: 100%;
         min-height: 56px;
@@ -656,7 +507,6 @@ body {
         justify-content: space-between;
         position: relative;
     }
-
     .menu_btn {
         display: inline-flex;
         align-items: center;
@@ -665,12 +515,7 @@ body {
         height: 24px;
         z-index: 2;
     }
-
-
-    .gnb {
-        display: none;
-    }
-
+    .gnb { display: none; }
     .lsg_Logo {
         position: absolute;
         left: 50%;
@@ -679,17 +524,11 @@ body {
         align-items: center;
         justify-content: center;
     }
-
     .lsg_Logo img {
         width: 34px;
         height: auto;
     }
-
-
-    .start {
-        margin-left: auto;
-    }
-
+    .start { margin-left: auto; }
     .start_btn {
         font-size: 14px;
         padding: 7px 12px;
@@ -698,131 +537,92 @@ body {
         min-height: 30px;
     }
 
-    .kv {
+    .hero {
         min-height: auto;
         padding: 28px 16px 40px;
         align-items: flex-start;
         background-position: 68% center;
     }
-
-    .kv-content {
+    .hero-inner {
         flex-direction: column;
         align-items: stretch;
         gap: 34px;
     }
-
-    .kv-title {
-        gap: 14px;
-    }
-
-    .pass-box {
+    .hero-title { gap: 14px; }
+    .badge-box {
         min-height: 34px;
         padding: 0 12px;
     }
-
     .price-card {
         max-width: 100%;
         padding: 28px 20px;
         border-radius: 20px;
         gap: 12px;
     }
-
-    .price-row {
-        gap: 8px;
-    }
-
-    .price-list {
-        gap: 4px;
-    }
-
-    .apply_btn {
+    .price-row { gap: 8px; }
+    .price-list { gap: 4px; }
+    .apply-btn {
         min-height: 48px;
         margin-top: 6px;
     }
 
-    .three-page {
+    .page-2 {
         min-height: auto;
         padding: 72px 16px;
     }
-
-    .three-content {
-        gap: 28px;
-    }
-
-    .three-title-text {
-        line-height: 1.4;
-    }
-
-    .three-main-btn {
+    .page-2-inner { gap: 28px; }
+    .page-2-title-text { line-height: 1.4; }
+    .page-2-big-btn {
         max-width: 100%;
         min-height: 180px;
         border-radius: 28px;
         padding: 24px 16px;
     }
-
-    .three-sub-btn-group {
+    .page-2-btn-group {
         flex-direction: column;
         align-items: stretch;
         gap: 12px;
     }
-
-    .three-sub-btn {
+    .page-2-small-btn {
         max-width: 100%;
         min-height: 54px;
         border-radius: 14px;
     }
 
-      .four-page {
-        padding: 34px 16px 60px;
-    }
-
-    .four-content {
-        max-width: 402px;
-    }
-
-    .four-title {
-        gap: 18px;
-    }
-
-    .four-small-text {
+    .page-3 { padding: 34px 16px 60px; }
+    .page-3-inner { max-width: 402px; }
+    .page-3-title { gap: 18px; }
+    .page-3-title-year {
         min-width: auto;
         width: auto;
         min-height: auto;
         padding: 6px 10px;
     }
-
-    .four-big-text {
+    .page-3-title-main {
         min-width: auto;
         width: 100%;
         min-height: auto;
         padding: 8px 10px;
     }
-
-    .four-banner-group {
+    .page-3-card-group {
         margin-top: 34px;
         gap: 18px;
     }
-
-    .four-banner,
-    .four-banner-right {
+    .page-3-card,
+    .page-3-card-right {
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
         min-height: auto;
         border-radius: 18px;
     }
-
-    .four-banner-right .top-seat-image-right {
-        order: 1;
-    }
-
-    .four-banner-right .text-body {
+    .page-3-card-right .page-3-card-photo-right { order: 1; }
+    .page-3-card-right .page-3-card-text {
         order: 2;
         margin-left: 0;
     }
-
-    .top-seat-image,
-    .top-seat-image-right {
+    .page-3-card-photo,
+    .page-3-card-photo-right {
         width: 100%;
         min-width: 0;
         min-height: auto;
@@ -830,109 +630,43 @@ body {
         justify-content: center;
         padding-right: 0;
     }
-
-    .top-seat-image img,
-    .top-seat-image-right img {
+    .page-3-card-photo img,
+    .page-3-card-photo-right img {
         max-height: 100%;
         width: auto;
     }
-
-    .text-body {
+    .page-3-card-text {
         width: 100%;
         min-height: auto;
         margin-left: 0;
         padding: 18px 18px 20px;
     }
-
-    .four-badge-group {
-        gap: 6px;
-    }
-
-    .four-badge-1,
-    .four-badge-2,
-    .four-badge-3 {
-        padding: 7px 12px;
-    }
-
-    .achievement-name {
-        margin-top: 14px;
-    }
-
-    .achievement-school {
-        margin-top: 4px;
-    }
-
-    .achievement-review {
-        margin-top: 10px;
-    }
-
-    .four-record-wrap {
+    .page-3-badge-group { gap: 6px; }
+    .page-3-badge-1,
+    .page-3-badge-2,
+    .page-3-badge-3 { padding: 7px 12px; }
+    .page-3-card-name  { margin-top: 14px; }
+    .page-3-card-school { margin-top: 4px; }
+    .page-3-card-review { margin-top: 10px; }
+    .page-3-record {
         margin-top: 34px;
         padding: 28px 20px 30px;
         border-radius: 20px;
     }
-
-    .four-record-line {
+    .page-3-record-line {
         width: 140px;
         margin-top: 10px;
     }
-
-    .four-record-list {
+    .page-3-record-list {
         margin-top: 28px;
         flex-direction: column;
         align-items: center;
         gap: 28px;
     }
-
-    .four-record-item {
-        max-width: 100%;
-    }
-
-    .four-record-icon {
-        font-size: 42px;
-    }
-
-
-}
-
-/* =========================
-   SMALL MOBILE
-   ========================= */
-@media (max-width: 430px) {
-    .four-page {
-        padding: 34px 12px 54px;
-    }
-
-    .four-content {
-        max-width: 100%;
-    }
-
-    .top-seat-image,
-    .top-seat-image-right {
-        height: 190px;
-    }
-
-    .text-body {
-        padding: 16px 14px 18px;
-    }
-
-    .four-badge-group {
-        gap: 5px;
-    }
-
-    .four-badge-1,
-    .four-badge-2,
-    .four-badge-3 {
-        padding: 6px 10px;
-    }
-
-    .circe-play-btn {
-        width: 32px;
-        height: 32px;
-    }
-
-    .four-record-wrap {
-        padding: 24px 16px 26px;
-        border-radius: 18px;
+    .page-3-record-item { max-width: 100%; }
+    .page-3-record-text {
+        flex-direction: column;
+        gap: 16px;
     }
 }
+
