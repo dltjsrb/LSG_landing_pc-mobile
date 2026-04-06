@@ -3,7 +3,7 @@
 body {
     font-family: 'Pretendard', sans-serif;
     overflow-x: hidden;
-   
+
 }
 
 
@@ -15,11 +15,7 @@ body {
     padding: 14px 20px;
 }
 
-/* 
-   내부 네비게이션
-   - 기존 고정 width 대신 max-width 사용
-   - 반응형에서 줄어들 수 있도록 수정
-*/
+
 .nav {
     display: flex;
     align-items: center;
@@ -48,10 +44,11 @@ body {
     justify-content: center;
 }
 
-  
+
 .menu_btn {
     display: none;
 }
+
 .navi {
     display: flex;
     align-items: center;
@@ -64,9 +61,7 @@ body {
     line-height: 1.5;
 }
 
-/* 
-   우측 버튼 영역
-*/
+
 .start {
     flex-shrink: 0;
 }
@@ -75,7 +70,7 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
+
     background-color: #83C9FD;
 
     padding: 10px 16px;
@@ -87,7 +82,7 @@ body {
 
 
 .kv {
-    min-height: calc(100vh - 81px);
+    min-height: 603px;
     background-image: url(../images/icon/lsgkivy.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -194,6 +189,350 @@ body {
     transform: scale(1.02);
 }
 
+.three-page {
+    min-height: 697px;
+    background: #fff;
+    padding: 120px 20px;
+}
+
+
+.three-content {
+    width: 100%;
+    max-width: 1198px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+
+
+.three-title {
+    width: 100%;
+}
+
+.three-title-text {
+    text-align: center;
+    line-height: 1.35;
+}
+
+
+.three-main-btn {
+    width: 100%;
+    max-width: 730px;
+    min-height: 297px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(#106DEA, #10B3D9);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    line-height: 1.15;
+}
+
+.three-main-btn:hover {
+    transform: scale(1.02);
+}
+
+
+.three-sub-btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.three-sub-btn {
+    width: 100%;
+    max-width: 480px;
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    background: #1072E9;
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+.four-page {
+    background: #679CFF;
+    padding: 80px 20px 100px;
+}
+
+/* 
+   내부 컨텐츠 폭
+*/
+.four-content {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* 
+   타이틀 영역
+*/
+.four-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+}
+
+/* 
+   상단 작은 타이틀 박스
+*/
+.four-small-text {
+    min-width: 248px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    background: #12EFFF;
+    text-align: center;
+}
+
+/* 
+   메인 타이틀 박스
+*/
+.four-big-text {
+    min-width: 708px;
+    min-height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    background: #12EFFF;
+    text-align: center;
+}
+
+/* 
+   배너 묶음
+*/
+.four-banner-group {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* 
+   개별 배너 카드
+*/
+.four-banner {
+    width: 100%;
+    min-height: 250px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.6);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* 
+   이미지 영역
+*/
+.top-seat-image {
+    width: 36.224%;
+    min-width: 300px;
+    min-height: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.top-seat-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
+   텍스트 영역
+*/
+.text-body {
+    flex: 1 1 auto;
+    min-height: 250px;
+    margin-left: 16px;
+    padding: 38px 24px 28px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+/* 
+   배지 그룹
+*/
+.four-badge-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* 
+   배지 공통
+*/
+.four-badge-1,
+.four-badge-2,
+.four-badge-3 {
+    border-radius: 999px;
+    padding: 10px 16px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.four-badge-1 {
+    color: #2a3dff;
+    border: 1px solid #3240ca;
+}
+
+.four-badge-2 {
+    color: #fc5eff;
+    border: 1px solid #cb13db;
+}
+
+.four-badge-3 {
+    color: #42ffba;
+    border: 1px solid #00db8b;
+}
+
+/* 
+   오른쪽 이미지 카드
+*/
+.four-banner-right {
+    justify-content: space-between;
+}
+
+.four-banner-right .text-body {
+    margin-left: 66px;
+    padding-right: 16px;
+}
+
+.top-seat-image-right {
+    width: 32.143%;
+    min-width: 260px;
+    justify-content: flex-end;
+    padding-right: 34px;
+    box-sizing: border-box;
+}
+
+/* 
+   텍스트 간격
+*/
+.achievement-name {
+    margin-top: 18px;
+}
+
+.achievement-school {
+    margin-top: 6px;
+}
+
+.achievement-review {
+    margin-top: 14px;
+    line-height: 1.5;
+}
+
+/* 
+   재생 버튼
+*/
+.circe-play-btn {
+    width: 34px;
+    height: 34px;
+    margin-top: 14px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #5577ff, #3cc7ff);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.circe-play-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid #fff;
+}
+
+/* =========================
+   FOUR RECORD
+   ========================= */
+.four-record-wrap {
+    width: 100%;
+    margin-top: 56px;
+    padding: 36px 40px 42px;
+    border-radius: 28px;
+    background: linear-gradient(90deg, #4C63F6 0%, #4A5EF1 45%, #5064F4 100%);
+}
+
+.four-record-title-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.four-record-sub-title {
+    text-align: center;
+    line-height: 1.4;
+}
+
+.four-record-line {
+    width: 200px;
+    height: 3px;
+    margin-top: 12px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.95);
+}
+
+.four-record-list {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.four-record-item {
+    flex: 1 1 0;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.four-record-label {
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.four-record-number {
+    margin-top: 8px;
+    line-height: 1;
+    color: #FFC325;
+}
+
+.four-record-desc {
+    margin-top: 18px;
+    line-height: 1.7;
+    opacity: 0.95;
+}
 
 
 @media (max-width: 1024px) {
@@ -236,6 +575,70 @@ body {
         padding: 34px 28px;
         border-radius: 24px;
     }
+
+    .three-page {
+        padding: 100px 24px;
+    }
+
+    .three-content {
+        gap: 40px;
+    }
+
+    .three-main-btn {
+        max-width: 640px;
+        min-height: 240px;
+        border-radius: 36px;
+    }
+
+    .three-sub-btn {
+        max-width: 420px;
+        min-height: 60px;
+    }
+     .four-page {
+        padding: 72px 24px 90px;
+    }
+
+    .four-title {
+        gap: 24px;
+    }
+
+    .four-big-text {
+        min-width: auto;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .four-banner {
+        min-height: 230px;
+    }
+
+    .top-seat-image {
+        min-width: 240px;
+        min-height: 230px;
+    }
+
+    .text-body {
+        min-height: 230px;
+        padding: 28px 20px 24px 0;
+    }
+
+    .four-banner-right .text-body {
+        margin-left: 34px;
+    }
+
+    .top-seat-image-right {
+        min-width: 220px;
+        padding-right: 20px;
+    }
+
+    .four-record-wrap {
+        padding: 32px 28px 36px;
+        border-radius: 24px;
+    }
+
+    .four-record-list {
+        gap: 40px;
+    }
 }
 
 
@@ -263,7 +666,7 @@ body {
         z-index: 2;
     }
 
-  
+
     .gnb {
         display: none;
     }
@@ -282,7 +685,7 @@ body {
         height: auto;
     }
 
-    
+
     .start {
         margin-left: auto;
     }
@@ -335,5 +738,201 @@ body {
     .apply_btn {
         min-height: 48px;
         margin-top: 6px;
+    }
+
+    .three-page {
+        min-height: auto;
+        padding: 72px 16px;
+    }
+
+    .three-content {
+        gap: 28px;
+    }
+
+    .three-title-text {
+        line-height: 1.4;
+    }
+
+    .three-main-btn {
+        max-width: 100%;
+        min-height: 180px;
+        border-radius: 28px;
+        padding: 24px 16px;
+    }
+
+    .three-sub-btn-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .three-sub-btn {
+        max-width: 100%;
+        min-height: 54px;
+        border-radius: 14px;
+    }
+
+      .four-page {
+        padding: 34px 16px 60px;
+    }
+
+    .four-content {
+        max-width: 402px;
+    }
+
+    .four-title {
+        gap: 18px;
+    }
+
+    .four-small-text {
+        min-width: auto;
+        width: auto;
+        min-height: auto;
+        padding: 6px 10px;
+    }
+
+    .four-big-text {
+        min-width: auto;
+        width: 100%;
+        min-height: auto;
+        padding: 8px 10px;
+    }
+
+    .four-banner-group {
+        margin-top: 34px;
+        gap: 18px;
+    }
+
+    .four-banner,
+    .four-banner-right {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        min-height: auto;
+        border-radius: 18px;
+    }
+
+    .four-banner-right .top-seat-image-right {
+        order: 1;
+    }
+
+    .four-banner-right .text-body {
+        order: 2;
+        margin-left: 0;
+    }
+
+    .top-seat-image,
+    .top-seat-image-right {
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+        height: 220px;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .top-seat-image img,
+    .top-seat-image-right img {
+        max-height: 100%;
+        width: auto;
+    }
+
+    .text-body {
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+        padding: 18px 18px 20px;
+    }
+
+    .four-badge-group {
+        gap: 6px;
+    }
+
+    .four-badge-1,
+    .four-badge-2,
+    .four-badge-3 {
+        padding: 7px 12px;
+    }
+
+    .achievement-name {
+        margin-top: 14px;
+    }
+
+    .achievement-school {
+        margin-top: 4px;
+    }
+
+    .achievement-review {
+        margin-top: 10px;
+    }
+
+    .four-record-wrap {
+        margin-top: 34px;
+        padding: 28px 20px 30px;
+        border-radius: 20px;
+    }
+
+    .four-record-line {
+        width: 140px;
+        margin-top: 10px;
+    }
+
+    .four-record-list {
+        margin-top: 28px;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .four-record-item {
+        max-width: 100%;
+    }
+
+    .four-record-icon {
+        font-size: 42px;
+    }
+
+
+}
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+@media (max-width: 430px) {
+    .four-page {
+        padding: 34px 12px 54px;
+    }
+
+    .four-content {
+        max-width: 100%;
+    }
+
+    .top-seat-image,
+    .top-seat-image-right {
+        height: 190px;
+    }
+
+    .text-body {
+        padding: 16px 14px 18px;
+    }
+
+    .four-badge-group {
+        gap: 5px;
+    }
+
+    .four-badge-1,
+    .four-badge-2,
+    .four-badge-3 {
+        padding: 6px 10px;
+    }
+
+    .circe-play-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .four-record-wrap {
+        padding: 24px 16px 26px;
+        border-radius: 18px;
     }
 }

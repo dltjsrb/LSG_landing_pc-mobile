@@ -122,8 +122,15 @@
 .font-size-16-24 {
     font-size: clamp(16px, 1.5vw, 24px);
 }
-.font-size-22-42{
-    font-size: clamp(22px, 2vw, 42px);
+.font-size-32-52{
+    font-size: clamp(32px, 2vw, 52px);
+}
+
+.font-size-48-58 {
+    font-size: clamp(48px, 4vw, 58px);
+}
+.font-size-50-70 {
+    font-size: clamp(50px, 4vw, 70px);
 }
 .font-size-14{
     font-size: 14px;
@@ -132,6 +139,42 @@
 .font-size-16{
     font-size: 16px;
 }
+.font-size-18-32 {
+    font-size: clamp(18px, 2vw, 32px);
+}
+.font-size-22-42 {
+    font-size: clamp(22px, 2vw, 42px);
+}
+
+.font-size-14-17{
+    font-size: clamp(14px, 1.5vw, 17px);
+}
+
+.font-size-20-34 {
+    font-size: clamp(20px, 2vw, 34px);
+}
+
+.font-size-38-48 {
+    font-size: clamp(38px, 4vw, 48px);
+}
+
+.font-size-25-32 {
+    font-size: clamp(25px, 2vw, 32px);
+}
+
+
+.font-size-42-52 {
+    font-size: clamp(42px, 4vw, 52px);
+}
+
+
+
+
+
+
+
+
+
 
 /* =========================
    4) 색상 관련 클래스
