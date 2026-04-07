@@ -84,7 +84,7 @@
     font-weight: 400;
 }
 
-.kivy-weight-medium {
+.font-weight-medium {
     font-family: 'Pretendard';
     font-weight: 500;
 }
@@ -105,67 +105,80 @@
    - font-size 중심
 ========================= */
 .font-size-hero {
-    font-size: clamp(62px, 10vw, 102px);
+    font-size: clamp(3.875rem, 10vw, 6.375rem);
 }
 .font-size-14-16{
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
 }
 
 .font-size-16-20 {
-    font-size: clamp(16px, 1.5vw, 20px);
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     
 }
 .font-size-23-38 {
-    font-size: clamp(23px, 2vw, 38px);
+    font-size: clamp(1.4375rem, 2vw, 2.375rem);
 }
 
 .font-size-16-24 {
-    font-size: clamp(16px, 1.5vw, 24px);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 .font-size-32-52{
-    font-size: clamp(32px, 2vw, 52px);
+    font-size: clamp(2rem, 2vw, 3.25rem);
 }
 
 .font-size-48-58 {
-    font-size: clamp(48px, 4vw, 58px);
+    font-size: clamp(3rem, 4vw, 3.625rem);
 }
 .font-size-50-70 {
-    font-size: clamp(50px, 4vw, 70px);
+    font-size: clamp(3.125rem, 4vw, 4.375rem);
 }
 .font-size-14{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .font-size-16{
-    font-size: 16px;
+    font-size: 1rem;
 }
 .font-size-18-32 {
-    font-size: clamp(18px, 2vw, 32px);
+    font-size: clamp(1.125rem, 2vw, 2rem);
 }
+
+.font-size-16-18 {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+}
+
 .font-size-22-42 {
-    font-size: clamp(22px, 2vw, 42px);
+    font-size: clamp(1.375rem, 2vw, 2.625rem);
 }
 
 .font-size-14-17{
-    font-size: clamp(14px, 1.5vw, 17px);
+    font-size: clamp(0.875rem, 1.5vw, 1.0625rem);
 }
 
 .font-size-20-34 {
-    font-size: clamp(20px, 2vw, 34px);
+    font-size: clamp(1.25rem, 2vw, 2.125rem);
 }
 
 .font-size-38-48 {
-    font-size: clamp(38px, 4vw, 48px);
+    font-size: clamp(2.375rem, 4vw, 3rem);
 }
 
 .font-size-25-32 {
-    font-size: clamp(25px, 2vw, 32px);
+    font-size: clamp(1.5625rem, 2vw, 2rem);
 }
 
+.font-size-22-32 {
+    font-size: clamp(1.375rem, 2vw, 2rem);
+}
 
 .font-size-42-52 {
-    font-size: clamp(42px, 4vw, 52px);
+    font-size: clamp(2.625rem, 4vw, 3.25rem);
 }
+.font-size-25-42 {
+    font-size: clamp(1.5625rem, 4vw, 2.625rem);
+}
+
+
 
 
 

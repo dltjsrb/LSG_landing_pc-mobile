@@ -23,7 +23,9 @@ body {
     gap: 20px;
 }
 
-.lsg_Logo { flex-shrink: 0; }
+.lsg_Logo {
+    flex-shrink: 0;
+}
 
 .lsg_Logo img {
     display: block;
@@ -37,7 +39,9 @@ body {
     justify-content: center;
 }
 
-.menu_btn { display: none; }
+.menu_btn {
+    display: none;
+}
 
 .navi {
     display: flex;
@@ -50,7 +54,9 @@ body {
     line-height: 1.5;
 }
 
-.start { flex-shrink: 0; }
+.start {
+    flex-shrink: 0;
+}
 
 .start_btn {
     display: inline-flex;
@@ -133,7 +139,9 @@ body {
     line-height: 1;
 }
 
-.price-row span:first-child { text-decoration: line-through; }
+.price-row span:first-child {
+    text-decoration: line-through;
+}
 
 .price-list {
     display: flex;
@@ -154,7 +162,9 @@ body {
     transition: transform 0.3s ease;
 }
 
-.apply-btn:hover { transform: scale(1.02); }
+.apply-btn:hover {
+    transform: scale(1.02);
+}
 
 /* ========================= PAGE 2: 환급 섹션 ========================= */
 .page-2 {
@@ -173,7 +183,9 @@ body {
     gap: 55px;
 }
 
-.page-2-title { width: 100%; }
+.page-2-title {
+    width: 100%;
+}
 
 .page-2-title-text {
     text-align: center;
@@ -196,7 +208,9 @@ body {
     line-height: 1.15;
 }
 
-.page-2-big-btn:hover { transform: scale(1.02); }
+.page-2-big-btn:hover {
+    transform: scale(1.02);
+}
 
 .page-2-btn-group {
     width: 100%;
@@ -242,7 +256,7 @@ body {
 .page-3-title-year {
     min-width: 248px;
     min-height: 48px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 18px;
@@ -272,7 +286,7 @@ body {
     width: 100%;
     min-height: 250px;
     border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0.6);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -322,11 +336,24 @@ body {
     white-space: nowrap;
 }
 
-.page-3-badge-1 { color: #2a3dff; border: 1px solid #3240ca; }
-.page-3-badge-2 { color: #fc5eff; border: 1px solid #cb13db; }
-.page-3-badge-3 { color: #42ffba; border: 1px solid #00db8b; }
+.page-3-badge-1 {
+    color: #2a3dff;
+    border: 1px solid #3240ca;
+}
 
-.page-3-card-right { justify-content: space-between; }
+.page-3-badge-2 {
+    color: #fc5eff;
+    border: 1px solid #cb13db;
+}
+
+.page-3-badge-3 {
+    color: #42ffba;
+    border: 1px solid #00db8b;
+}
+
+.page-3-card-right {
+    justify-content: space-between;
+}
 
 .page-3-card-right .page-3-card-text {
     margin-left: 66px;
@@ -341,9 +368,18 @@ body {
     box-sizing: border-box;
 }
 
-.page-3-card-name  { margin-top: 18px; }
-.page-3-card-school { margin-top: 6px; }
-.page-3-card-review { margin-top: 14px; line-height: 1.5; }
+.page-3-card-name {
+    margin-top: 18px;
+}
+
+.page-3-card-school {
+    margin-top: 6px;
+}
+
+.page-3-card-review {
+    margin-top: 14px;
+    line-height: 1.5;
+}
 
 .page-3-card-play-btn {
     width: 34px;
@@ -393,7 +429,7 @@ body {
     height: 3px;
     margin-top: 12px;
     border-radius: 999px;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .page-3-record-list {
@@ -433,64 +469,269 @@ body {
     opacity: 0.95;
 }
 
+
+
+
+
+
+
+/* ========================= PAGE 4: 리뷰 섹션 ========================= */
+
+.page-4 {
+    padding: 80px 0 100px;
+    background: linear-gradient(#4F8CFF, #4049FF);
+}
+
+.page-4-inner {
+    max-width: 1280px;
+    width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.page-4-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-4-review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.page-4-review-card {
+    width: 100%;
+    max-width: 712px;
+    min-height: 202px;
+    background: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    padding: 20px;
+}
+
+.page-4-card-img {
+    position: relative;
+    display: inline-block;
+}
+
+.page-4-success-right {
+    width: 60px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FCC325;
+    border-radius: 999px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page-4-review-card-2 {
+    margin-left: 410px;
+}
+
+.page-4-review-card-3 {
+    margin-left: 60px;
+}
+
+.page-4-review-card-4 {
+    margin-left: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========================= TABLET (1024px) ========================= */
 @media (max-width: 1024px) {
-    .header_wrap { padding: 14px 24px; }
-    .nav { gap: 16px; }
-    .navi { gap: 16px; }
-    .navi a { font-size: 14px; }
-    .start_btn { font-size: 15px; padding: 10px 14px; }
 
+    /* 메뉴 */
+    .header_wrap {
+        padding: 14px 24px;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+
+    .navi {
+        gap: 16px;
+    }
+
+    .navi a {
+        font-size: 14px;
+    }
+
+    .start_btn {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+
+    /* kv */
     .hero {
         padding: 56px 24px;
         background-position: 62% center;
     }
-    .hero-inner { gap: 28px; }
-    .hero-title { gap: 18px; }
+
+    .hero-inner {
+        gap: 28px;
+    }
+
+    .hero-title {
+        gap: 18px;
+    }
+
     .price-card {
         max-width: 520px;
         padding: 34px 28px;
         border-radius: 24px;
     }
 
-    .page-2 { padding: 100px 24px; }
-    .page-2-inner { gap: 40px; }
+    /* page 2 */
+    .page-2 {
+        padding: 100px 24px;
+    }
+
+    .page-2-inner {
+        gap: 40px;
+    }
+
     .page-2-big-btn {
         max-width: 640px;
         min-height: 240px;
         border-radius: 36px;
     }
+
     .page-2-small-btn {
         max-width: 420px;
         min-height: 60px;
     }
 
-    .page-3 { padding: 72px 24px 90px; }
-    .page-3-title { gap: 24px; }
+    /* page 3 */
+    .page-3 {
+        padding: 72px 24px 90px;
+    }
+
+    .page-3-title {
+        gap: 24px;
+    }
+
     .page-3-title-main {
         min-width: auto;
         width: auto;
         max-width: 100%;
     }
-    .page-3-card { min-height: 230px; }
+
+    .page-3-card {
+        min-height: 230px;
+    }
+
     .page-3-card-photo {
         min-width: 240px;
         min-height: 230px;
     }
+
     .page-3-card-text {
         min-height: 230px;
         padding: 28px 20px 24px 0;
     }
-    .page-3-card-right .page-3-card-text { margin-left: 34px; }
+
+    .page-3-card-right .page-3-card-text {
+        margin-left: 34px;
+    }
+
     .page-3-card-photo-right {
         min-width: 220px;
         padding-right: 20px;
     }
+
     .page-3-record {
         padding: 32px 28px 36px;
         border-radius: 24px;
     }
-    .page-3-record-list { gap: 40px; }
+
+    .page-3-record-list {
+        gap: 40px;
+    }
+
+    /* page 4 */
+    .page-4 {
+        padding: 4.5rem 0 5rem;
+        height: auto;
+    }
+
+    .page-4-inner {
+        width: calc(100% - 3rem);
+        max-width: 64rem;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .page-4-title {
+        gap: 0.625rem;
+    }
+
+    .page-4-review-list {
+        gap: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    .page-4-review-card {
+        width: 100%;
+        max-width: 44.5rem;
+        min-height: 12.625rem;
+        height: auto;
+        gap: 2rem;
+        padding: 1.25rem;
+        border-radius: 1.5rem;
+    }
+
+    .page-4-review-card-2,
+    .page-4-review-card-3,
+    .page-4-review-card-4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .page-4-review-card:nth-child(odd) {
+        margin-right: auto;
+    }
+
+    .page-4-review-card:nth-child(even) {
+        margin-left: auto;
+    }
+
+    .page-4-success-right {
+        width: 3.75rem;
+        height: 1.375rem;
+        bottom: -0.5rem;
+    }
 }
 
 /* ========================= MOBILE (768px) ========================= */
@@ -499,6 +740,7 @@ body {
         min-height: 56px;
         padding: 0;
     }
+
     .nav {
         max-width: 100%;
         min-height: 56px;
@@ -507,6 +749,7 @@ body {
         justify-content: space-between;
         position: relative;
     }
+
     .menu_btn {
         display: inline-flex;
         align-items: center;
@@ -515,7 +758,11 @@ body {
         height: 24px;
         z-index: 2;
     }
-    .gnb { display: none; }
+
+    .gnb {
+        display: none;
+    }
+
     .lsg_Logo {
         position: absolute;
         left: 50%;
@@ -524,11 +771,16 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     .lsg_Logo img {
         width: 34px;
         height: auto;
     }
-    .start { margin-left: auto; }
+
+    .start {
+        margin-left: auto;
+    }
+
     .start_btn {
         font-size: 14px;
         padding: 7px 12px;
@@ -543,24 +795,37 @@ body {
         align-items: flex-start;
         background-position: 68% center;
     }
+
     .hero-inner {
         flex-direction: column;
         align-items: stretch;
         gap: 34px;
     }
-    .hero-title { gap: 14px; }
+
+    .hero-title {
+        gap: 14px;
+    }
+
     .badge-box {
         min-height: 34px;
         padding: 0 12px;
     }
+
     .price-card {
         max-width: 100%;
         padding: 28px 20px;
         border-radius: 20px;
         gap: 12px;
     }
-    .price-row { gap: 8px; }
-    .price-list { gap: 4px; }
+
+    .price-row {
+        gap: 8px;
+    }
+
+    .price-list {
+        gap: 4px;
+    }
+
     .apply-btn {
         min-height: 48px;
         margin-top: 6px;
@@ -570,44 +835,65 @@ body {
         min-height: auto;
         padding: 72px 16px;
     }
-    .page-2-inner { gap: 28px; }
-    .page-2-title-text { line-height: 1.4; }
+
+    .page-2-inner {
+        gap: 28px;
+    }
+
+    .page-2-title-text {
+        line-height: 1.4;
+    }
+
     .page-2-big-btn {
         max-width: 100%;
         min-height: 180px;
         border-radius: 28px;
         padding: 24px 16px;
     }
+
     .page-2-btn-group {
         flex-direction: column;
         align-items: stretch;
         gap: 12px;
     }
+
     .page-2-small-btn {
         max-width: 100%;
         min-height: 54px;
         border-radius: 14px;
     }
 
-    .page-3 { padding: 34px 16px 60px; }
-    .page-3-inner { max-width: 402px; }
-    .page-3-title { gap: 18px; }
+    .page-3 {
+        padding: 34px 16px 60px;
+    }
+
+    .page-3-inner {
+        max-width: 402px;
+    }
+
+    .page-3-title {
+        gap: 18px;
+    }
+
     .page-3-title-year {
         min-width: auto;
         width: auto;
         min-height: auto;
         padding: 6px 10px;
     }
+
     .page-3-title-main {
         min-width: auto;
         width: 100%;
         min-height: auto;
         padding: 8px 10px;
     }
+
     .page-3-card-group {
         margin-top: 34px;
         gap: 18px;
     }
+
     .page-3-card,
     .page-3-card-right {
         flex-direction: column;
@@ -616,11 +902,16 @@ body {
         min-height: auto;
         border-radius: 18px;
     }
-    .page-3-card-right .page-3-card-photo-right { order: 1; }
+
+    .page-3-card-right .page-3-card-photo-right {
+        order: 1;
+    }
+
     .page-3-card-right .page-3-card-text {
         order: 2;
         margin-left: 0;
     }
+
     .page-3-card-photo,
     .page-3-card-photo-right {
         width: 100%;
@@ -630,43 +921,200 @@ body {
         justify-content: center;
         padding-right: 0;
     }
+
     .page-3-card-photo img,
     .page-3-card-photo-right img {
         max-height: 100%;
         width: auto;
     }
+
     .page-3-card-text {
         width: 100%;
         min-height: auto;
         margin-left: 0;
         padding: 18px 18px 20px;
     }
-    .page-3-badge-group { gap: 6px; }
+
+    .page-3-badge-group {
+        gap: 6px;
+    }
+
     .page-3-badge-1,
     .page-3-badge-2,
-    .page-3-badge-3 { padding: 7px 12px; }
-    .page-3-card-name  { margin-top: 14px; }
-    .page-3-card-school { margin-top: 4px; }
-    .page-3-card-review { margin-top: 10px; }
+    .page-3-badge-3 {
+        padding: 7px 12px;
+    }
+
+    .page-3-card-name {
+        margin-top: 14px;
+    }
+
+    .page-3-card-school {
+        margin-top: 4px;
+    }
+
+    .page-3-card-review {
+        margin-top: 10px;
+    }
+
     .page-3-record {
         margin-top: 34px;
         padding: 28px 20px 30px;
         border-radius: 20px;
     }
+
     .page-3-record-line {
         width: 140px;
         margin-top: 10px;
     }
+
     .page-3-record-list {
         margin-top: 28px;
         flex-direction: column;
         align-items: center;
         gap: 28px;
     }
-    .page-3-record-item { max-width: 100%; }
+
+    .page-3-record-item {
+        max-width: 100%;
+    }
+
     .page-3-record-text {
         flex-direction: column;
         gap: 16px;
     }
+
+    /* page 4 */
+    .page-4 {
+        height: auto;
+        padding: 56px 16px 60px;
+    }
+
+    .page-4-inner {
+        width: 100%;
+        max-width: 402px;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .page-4-title {
+        gap: 6px;
+    }
+
+    .page-4-review-list {
+        gap: 18px;
+        margin-top: 28px;
+        align-items: center;
+    }
+
+    .page-4-review-card {
+        width: 100%;
+        max-width: 350px;
+        min-height: 150px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 16px;
+        border-radius: 22px;
+        margin: 0 auto;
+    }
+
+    .page-4-card-img {
+        flex-shrink: 0;
+    }
+
+    .page-4-card-img img {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+    }
+
+    .page-4-success-right {
+        width: 52px;
+        height: 20px;
+        bottom: -7px;
+        font-size: 12px;
+    }
+
+    .page-4-review-card-2,
+    .page-4-review-card-3,
+    .page-4-review-card-4 {
+        margin-left: 0;
+    }
 }
 
+/* ========================= SMALL MOBILE (430px) ========================= */
+@media (max-width: 430px) {
+    .page-3 {
+        padding: 34px 12px 54px;
+    }
+
+    .page-3-inner {
+        max-width: 100%;
+    }
+
+    .page-3-card-photo,
+    .page-3-card-photo-right {
+        height: 190px;
+    }
+
+    .page-3-card-text {
+        padding: 16px 14px 18px;
+    }
+
+    .page-3-badge-group {
+        gap: 5px;
+    }
+
+    .page-3-badge-1,
+    .page-3-badge-2,
+    .page-3-badge-3 {
+        padding: 6px 10px;
+    }
+
+    .page-3-card-play-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .page-3-record {
+        padding: 24px 16px 26px;
+        border-radius: 18px;
+    }
+
+    /* page 4 */
+    .page-4 {
+        padding: 48px 12px 54px;
+    }
+
+    .page-4-inner {
+        max-width: 100%;
+    }
+
+    .page-4-review-list {
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .page-4-review-card {
+        max-width: 340px;
+        min-height: 140px;
+        gap: 12px;
+        padding: 12px 14px;
+        border-radius: 20px;
+    }
+
+    .page-4-card-img img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .page-4-success-right {
+        width: 48px;
+        height: 18px;
+        bottom: -6px;
+        font-size: 11px;
+    }
+}
