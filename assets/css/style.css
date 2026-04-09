@@ -3,17 +3,43 @@
 body {
     font-family: 'Pretendard', sans-serif;
     overflow-x: hidden;
+    line-height: 1.5;
+    word-break: keep-all;
+    color: var(--color-text-primary);
 }
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
 
 /* ========================= HEADER (변경 없음) ========================= */
 .header_wrap {
     width: 100%;
-    min-height: 81px;
-    background-color: #2498F2;
-    padding: 14px 20px;
+    min-height: 5.0625rem;
+    background-color: var(--color-brand-3);
+    padding: 0.875rem 1.25rem;
 }
-
-.nav {
+ .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,6 +58,16 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+p {
+    line-height: 1.6;
+}
+
 
 .gnb {
     flex: 1 1 auto;
@@ -62,12 +98,13 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #83C9FD;
-    padding: 10px 16px;
-    border-radius: 30px;
+    background-color: var(--color-brand-4);
+    padding: 0.625rem 1rem;
+    border-radius: 1.875rem;
     border: none;
     cursor: pointer;
 }
+
 
 /* ========================= KV (변경 없음) ========================= */
 .hero {
@@ -113,14 +150,14 @@ body {
 }
 
 .hero-title h1 {
-    line-height: 0.9;
-    letter-spacing: -0.03em;
+    line-height: 0.92;
+    letter-spacing: -0.04em;
 }
 
 .price-card {
     width: 100%;
     max-width: 605px;
-    padding: 42px 40px;
+    padding: 40px 36px;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.52);
     backdrop-filter: blur(10px);
@@ -146,9 +183,9 @@ body {
 .price-list {
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    line-height: 1.5;
-    margin-top: 4px;
+    gap: 8px;
+    line-height: 1.65;
+    margin-top: 6px;
 }
 
 .apply-btn {
@@ -189,7 +226,8 @@ body {
 
 .page-2-title-text {
     text-align: center;
-    line-height: 1.35;
+    line-height: 1.32;
+    letter-spacing: -0.02em;
 }
 
 .page-2-big-btn {
@@ -273,6 +311,7 @@ body {
     padding: 10px 18px;
     background: #12EFFF;
     text-align: center;
+    line-height: 1.3;
 }
 
 .page-3-card-group {
@@ -308,6 +347,16 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+p {
+    line-height: 1.6;
+}
+
 
 .page-3-card-text {
     flex: 1 1 auto;
@@ -378,7 +427,7 @@ body {
 
 .page-3-card-review {
     margin-top: 14px;
-    line-height: 1.5;
+    line-height: 1.65;
 }
 
 .page-3-card-play-btn {
@@ -469,14 +518,7 @@ body {
     opacity: 0.95;
 }
 
-
-
-
-
-
-
 /* ========================= PAGE 4: 리뷰 섹션 ========================= */
-
 .page-4 {
     padding: 80px 0 100px;
     background: linear-gradient(#4F8CFF, #4049FF);
@@ -510,8 +552,8 @@ body {
     border-radius: 30px;
     display: flex;
     align-items: center;
-    gap: 53px;
-    padding: 20px;
+    gap: 32px;
+    padding: 24px;
 }
 
 .page-4-card-img {
@@ -545,33 +587,511 @@ body {
     margin-left: 350px;
 }
 
+/* ========================= PAGE 5 ========================= */
+.page-5 {
+    padding: 80px 0 100px;
+    background: linear-gradient(#4F8CFF, #4049FF);
+}
 
+.page-5-inner {
+    max-width: 1280px;
+    width: calc(100% - 48px);
+    margin: 0 auto;
+}
 
+.page-5-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
+.page-5-review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
 
+.page-5-review-card {
+    width: 100%;
+    max-width: 712px;
+    min-height: 202px;
+    background: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px;
+}
 
+.page-5-card-img {
+    position: relative;
+    display: inline-block;
+}
 
+.page-5-success-right {
+    width: 60px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FCC325;
+    border-radius: 999px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+.page-5-review-card-2 {
+    margin-left: 410px;
+}
 
+.page-5-review-card-3 {
+    margin-left: 60px;
+}
 
+.page-5-review-card-4 {
+    margin-left: 350px;
+}
 
+/* ========================= PAGE 6 ========================= */
+.page-6 {
+    padding: 94px 0 88px;
+    background: #106DEA;
+}
 
+.page-6-inner {
+    width: calc(100% - 48px);
+    max-width: 1198px;
+    margin: 0 auto;
+}
 
+.page-6-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+    text-align: center;
+}
 
+.page-6-group + .page-6-group {
+    margin-top: 42px;
+}
 
+.page-6-group-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    gap: 20px;
+}
 
+.page-6-group-head a {
+    text-decoration: none;
+}
 
+.page-6-card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 
+.page-6-card {
+    min-height: 468px;
+    padding: 40px 34px 34px;
+    border-radius: 18px;
+    background: #fff;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 
+.page-6-card-best {
+    transform: translateY(-10px);
+}
 
+.page-6-card-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffcf2f;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+}
 
+.page-6-card-price {
+    margin-top: 18px;
+}
 
+.page-6-card-feature-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    line-height: 1.7;
+    flex: 1;
+}
 
+.page-6-card-feature-list li::before {
+    content: "· ";
+}
+
+.page-6-card-btn {
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #4f7fff, #7ab9ff);
+    cursor: pointer;
+}
+
+.page-6-order-box {
+    margin-top: 42px;
+    padding: 26px 32px;
+    border-radius: 18px;
+    background: #eef3ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.page-6-order-info {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.page-6-order-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.page-6-order-btn {
+    width: 20rem;
+    height: 3.625rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #4f7fff, #7ab9ff);
+    cursor: pointer;
+}
+
+/* ========================= PAGE 7 ========================= */
+.page-7 {
+    padding: 6rem 0 6.875rem;
+    background: var(--color-bg-light);
+}
+
+.page-7-inner {
+    width: calc(100% - 48px);
+    max-width: 1198px;
+    margin: 0 auto;
+}
+
+.page-7-title {
+    margin-bottom: 40px;
+}
+
+.page-7-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.page-7-card {
+    min-height: 180px;
+    padding: 28px 28px 24px;
+    border-radius: 16px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.page-7-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 28px;
+    border-radius: 999px;
+    background: #eef3ff;
+}
+
+.page-7-card h3 {
+    margin-top: 18px;
+}
+
+.page-7-card p {
+    margin-top: 14px;
+    line-height: 1.75;
+}
+
+/* ========================= PAGE 8 ========================= */
+.page-8 {
+    padding: 5.75rem 0 5.5rem;
+    background: var(--color-brand-6);
+}
+
+.page-8-inner {
+    width: calc(100% - 48px);
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-8-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.page-8-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 7.5rem;
+    height: 2.75rem;
+    border-radius: 999px;
+    background: var(--color-white);
+}
+
+.page-8-box {
+    --page-8-circle: clamp(5.5rem, 16vw, 8rem);
+    margin-top: 2.5rem;
+    padding: 1.75rem 2.125rem;
+    border: 0.1875rem solid var(--color-event-box-border);
+    border-radius: 1.375rem;
+    background: var(--color-white);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.125rem 1rem;
+    align-items: start;
+}
+
+.page-8-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+}
+
+.page-8-item-visual {
+    position: relative;
+    width: var(--page-8-circle);
+    flex-shrink: 0;
+}
+
+/* 레퍼런스와 동일: 큰 원 하나(얇은 하늘색 테두리) + 이미지 */
+.page-8-item-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 0.0625rem solid var(--color-event-image-ring);
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-8-item-image img {
+    width: 72%;
+    height: 72%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* noddle.png: 정사각형+검은 배경 — 확대로 잘라내고, 링은 다른 상품과 동일하게 CSS border */
+.page-8-item-image--precomposed-photo {
+    border: 0.0625rem solid var(--color-event-image-ring);
+    background: var(--color-white);
+}
+
+.page-8-item-image--precomposed-photo img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.28);
+    transform-origin: center center;
+}
+
+.page-8-item-badge {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-12%, 14%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    height: 2.5rem;
+    padding: 0 0.35rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 0.125rem solid var(--color-white);
+    background: var(--color-brand-1);
+    box-shadow: 0 0.125rem 0.5rem rgba(16, 109, 234, 0.28);
+    line-height: 1;
+    z-index: 1;
+}
+
+.page-8-item-label {
+    width: 100%;
+    max-width: 11rem;
+    margin: 0;
+    text-align: center;
+    line-height: 1.45;
+    word-break: keep-all;
+}
+
+.page-8-period {
+    margin-top: 1.375rem;
+}
+
+/* ========================= PAGE 9 ========================= */
+.page-9 {
+    padding: 6rem 0 6.875rem;
+    background: var(--color-white);
+}
+
+.page-9-inner {
+    width: calc(100% - 48px);
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.page-9-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.page-9-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page-9-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.page-9-form-group input,
+.page-9-form-group select {
+    width: 100%;
+    height: 3.625rem;
+    padding: 0 1.25rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.page-9-privacy-btn,
+.page-9-consult-btn {
+    width: 100%;
+    height: 3.375rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.page-9-privacy-btn {
+    background: #cfe4f8;
+}
+
+.page-9-consult-btn {
+    background: linear-gradient(90deg, #4f7fff, #7ab9ff);
+}
+
+/* ========================= FOOTER ========================= */
+.footer-page {
+    background: #e9e9e9;
+}
+
+.footer-content {
+    width: calc(100% - 48px);
+    max-width: 1198px;
+    margin: 0 auto;
+    padding: 38px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.footer-logo {
+    width: 70px;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.footer-menu a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.footer-address,
+.footer-copy {
+    color: var(--color-text-muted);
+    font-size: 0.8125rem;
+    line-height: 1.7;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+}
+
+.footer-sns {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-sns a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    background: #8f8f8f;
+    text-decoration: none;
+}
 
 /* ========================= TABLET (1024px) ========================= */
 @media (max-width: 1024px) {
-
-    /* 메뉴 */
     .header_wrap {
         padding: 14px 24px;
     }
@@ -593,7 +1113,6 @@ body {
         padding: 10px 14px;
     }
 
-    /* kv */
     .hero {
         padding: 56px 24px;
         background-position: 62% center;
@@ -613,7 +1132,6 @@ body {
         border-radius: 24px;
     }
 
-    /* page 2 */
     .page-2 {
         padding: 100px 24px;
     }
@@ -633,13 +1151,12 @@ body {
         min-height: 60px;
     }
 
-    /* page 3 */
     .page-3 {
         padding: 72px 24px 90px;
     }
 
     .page-3-title {
-        gap: 24px;
+        gap: var(--lecturer-gap);
     }
 
     .page-3-title-main {
@@ -680,7 +1197,6 @@ body {
         gap: 40px;
     }
 
-    /* page 4 */
     .page-4 {
         padding: 4.5rem 0 5rem;
         height: auto;
@@ -731,6 +1247,55 @@ body {
         width: 3.75rem;
         height: 1.375rem;
         bottom: -0.5rem;
+    }
+
+    .page-5 {
+        padding: 72px 0 80px;
+    }
+
+    .page-5-review-card-1,
+    .page-5-review-card-2,
+    .page-5-review-card-3,
+    .page-5-review-card-4 {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+    }
+
+    .page-5-review-card-1,
+    .page-5-review-card-3 {
+        justify-content: flex-start;
+    }
+
+    .page-5-review-card-2,
+    .page-5-review-card-4 {
+        justify-content: flex-end;
+    }
+
+    .page-6-card-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-6-order-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .page-6-order-btn {
+        width: 100%;
+    }
+
+    .page-8-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-right {
+        align-items: flex-start;
     }
 }
 
@@ -806,6 +1371,14 @@ body {
         gap: 14px;
     }
 
+    .hero-title h1 {
+        max-width: 8ch;
+    }
+
+    .hero-title > p {
+        line-height: 1.45;
+    }
+
     .badge-box {
         min-height: 34px;
         padding: 0 12px;
@@ -816,6 +1389,13 @@ body {
         padding: 28px 20px;
         border-radius: 20px;
         gap: 12px;
+    }
+
+    .price-card p br,
+    .price-card li br,
+    .page-3-card-review br,
+    .page-3-record-text br {
+        display: none;
     }
 
     .price-row {
@@ -984,7 +1564,6 @@ body {
         gap: 16px;
     }
 
-    /* page 4 */
     .page-4 {
         height: auto;
         padding: 56px 16px 60px;
@@ -1021,6 +1600,11 @@ body {
         margin: 0 auto;
     }
 
+    .page-4-review-card p,
+    .page-5-review-card p {
+        line-height: 1.55;
+    }
+
     .page-4-card-img {
         flex-shrink: 0;
     }
@@ -1043,67 +1627,1248 @@ body {
     .page-4-review-card-4 {
         margin-left: 0;
     }
+
+    .page-5 {
+        padding: 56px 16px 60px;
+    }
+
+    .page-5-inner {
+        width: 100%;
+        max-width: 402px;
+    }
+
+    .page-5-review-list {
+        gap: 18px;
+        margin-top: 28px;
+        align-items: center;
+    }
+
+    .page-5-review-card {
+        width: 100%;
+        max-width: 350px;
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 16px;
+        border-radius: 22px;
+        margin: 0 auto;
+    }
+
+    .page-5-card-img img {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+    }
+
+    .page-5-success-right {
+        width: 52px;
+        height: 20px;
+        bottom: -7px;
+    }
+
+    .page-5-review-card-1,
+    .page-5-review-card-2,
+    .page-5-review-card-3,
+    .page-5-review-card-4 {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .page-6 {
+        padding: 56px 16px 60px;
+    }
+
+    .page-6-inner,
+    .page-7-inner,
+    .page-8-inner,
+    .page-9-inner,
+    .footer-content {
+        width: 100%;
+        max-width: 402px;
+    }
+
+    .page-6-title,
+    .page-7-title,
+    .page-8-title,
+    .page-9-title {
+        text-align: center;
+    }
+
+    .page-6-group-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-6-card-list {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .page-6-card {
+        min-height: auto;
+        padding: 28px 20px 22px;
+    }
+
+    .page-6-card-best {
+        transform: none;
+    }
+
+    .page-6-order-box {
+        padding: 20px 18px;
+    }
+
+    .page-6-order-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .page-6-order-price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .page-7 {
+        padding: 56px 16px 60px;
+    }
+
+    .page-7-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .page-7-card {
+        min-height: auto;
+        padding: 22px 20px;
+    }
+
+    .page-8 {
+        padding: 56px 16px 60px;
+    }
+
+    .page-8-box {
+        grid-template-columns: 1fr 1fr;
+        padding: 1.25rem 1rem;
+        gap: 1.25rem 1rem;
+        --page-8-circle: clamp(5rem, 28vw, 6.75rem);
+    }
+
+    .page-8-item-label {
+        line-height: 1.45;
+    }
+
+    .page-9 {
+        padding: 56px 16px 60px;
+    }
+
+    .footer-content {
+        padding: 32px 0;
+    }
+
+    .footer-menu {
+        gap: 12px;
+    }
 }
 
 /* ========================= SMALL MOBILE (430px) ========================= */
 @media (max-width: 430px) {
-    .page-3 {
-        padding: 34px 12px 54px;
+    .font-size-hero {
+        font-size: clamp(2.5rem, 13vw, 3.3rem);
     }
 
-    .page-3-inner {
+    .page-2-big-btn {
+        min-height: 150px;
+    }
+
+    .page-5 {
+        padding: 48px 12px 52px;
+    }
+
+    .page-5-inner,
+    .page-6-inner,
+    .page-7-inner,
+    .page-8-inner,
+    .page-9-inner,
+    .footer-content {
         max-width: 100%;
     }
 
-    .page-3-card-photo,
-    .page-3-card-photo-right {
-        height: 190px;
-    }
-
-    .page-3-card-text {
-        padding: 16px 14px 18px;
-    }
-
-    .page-3-badge-group {
-        gap: 5px;
-    }
-
-    .page-3-badge-1,
-    .page-3-badge-2,
-    .page-3-badge-3 {
-        padding: 6px 10px;
-    }
-
-    .page-3-card-play-btn {
-        width: 32px;
-        height: 32px;
-    }
-
-    .page-3-record {
-        padding: 24px 16px 26px;
+    .page-5-review-card {
+        max-width: 100%;
+        min-height: 132px;
+        gap: 12px;
+        padding: 12px 14px;
         border-radius: 18px;
     }
 
-    /* page 4 */
-    .page-4 {
-        padding: 48px 12px 54px;
+    .page-5-card-img img {
+        width: 64px;
+        height: 64px;
     }
 
-    .page-4-inner {
+    .page-5-success-right {
+        width: 46px;
+        height: 18px;
+        bottom: -6px;
+    }
+
+    .page-6 {
+        padding: 48px 12px 52px;
+    }
+
+    .page-6-card {
+        padding: 22px 16px 18px;
+    }
+
+    .page-6-order-box {
+        padding: 16px 14px;
+    }
+
+    .page-7 {
+        padding: 48px 12px 52px;
+    }
+
+    .page-8 {
+        padding: 48px 12px 52px;
+    }
+
+    .page-8-box {
+        grid-template-columns: 1fr;
+        --page-8-circle: clamp(6.5rem, 52vw, 9rem);
+    }
+
+    .page-9 {
+        padding: 48px 12px 52px;
+    }
+}
+
+/* ========================= 2026-04 실무형 업그레이드 ========================= */
+:root {
+    --header-height: 81px;
+    --content-max: 1198px;
+    --review-max: 712px;
+    --section-space: clamp(56px, 8vw, 110px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+section[id] {
+    scroll-margin-top: calc(var(--header-height) + 16px);
+}
+
+a,
+button {
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+.navi a,
+.footer-menu a,
+.page-6-group-head a {
+    transition: opacity 0.2s ease;
+}
+
+.navi a:hover,
+.footer-menu a:hover,
+.page-6-group-head a:hover {
+    opacity: 0.75;
+}
+
+.start_btn:hover,
+.apply-btn:hover,
+.page-2-big-btn:hover,
+.page-6-card-btn:hover,
+.page-6-order-btn:hover,
+.page-9-consult-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+}
+
+.header_wrap {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.nav {
+    position: relative;
+}
+
+.navi li {
+    list-style: none;
+}
+
+.page-4-review-list,
+.page-5-review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.page-4-review-card-1,
+.page-4-review-card-2,
+.page-4-review-card-3,
+.page-4-review-card-4,
+.page-5-review-card-1,
+.page-5-review-card-2,
+.page-5-review-card-3,
+.page-5-review-card-4 {
+    width: 100%;
+    display: flex;
+}
+
+.page-4-review-card-1,
+.page-4-review-card-3,
+.page-5-review-card-1,
+.page-5-review-card-3 {
+    justify-content: flex-start;
+}
+
+.page-4-review-card-2,
+.page-4-review-card-4,
+.page-5-review-card-2,
+.page-5-review-card-4 {
+    justify-content: flex-end;
+}
+
+.page-4-review-card-2,
+.page-4-review-card-3,
+.page-4-review-card-4,
+.page-5-review-card-2,
+.page-5-review-card-3,
+.page-5-review-card-4 {
+    margin-left: 0;
+}
+
+.page-4-review-card,
+.page-5-review-card {
+    box-shadow: 0 14px 32px rgba(18, 38, 120, 0.16);
+}
+
+.page-4-review-card-text,
+.page-5-review-card-text {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.page-4-review-card-text p:last-child,
+.page-5-review-card-text p:last-child {
+    max-width: 38ch;
+    line-height: 1.7;
+}
+
+.page-6-group-head {
+    align-items: flex-end;
+}
+
+.page-6-group-head p {
+    flex: 1 1 auto;
+    line-height: 1.6;
+}
+
+.page-6-group-head a {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.page-6-card-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.page-6-card {
+    box-shadow: 0 14px 36px rgba(15, 46, 150, 0.14);
+}
+
+.page-6-card-price {
+    line-height: 1.1;
+}
+
+.page-6-card-btn {
+    margin-top: 20px;
+}
+
+.page-6-order-box {
+    box-shadow: 0 10px 28px rgba(13, 41, 120, 0.12);
+}
+
+.page-9-form-group input:focus,
+.page-9-form-group select:focus {
+    outline: none;
+    border-color: #106DEA;
+    box-shadow: 0 0 0 4px rgba(16, 109, 234, 0.14);
+}
+
+@media (max-width: 900px) {
+    .page-6-group-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-6-card-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: 56px;
+    }
+
+    .gnb {
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 16px;
+        width: min(220px, calc(100vw - 32px));
+        padding: 18px 18px 20px;
+        border-radius: 18px;
+        background: rgba(23, 23, 27, 0.96);
+        box-shadow: 0 18px 38px rgba(0, 0, 0, 0.24);
+        backdrop-filter: blur(8px);
+        justify-content: flex-start;
+        display: none;
+    }
+
+    .gnb.active {
+        display: flex;
+    }
+
+    .navi {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .navi a {
+        display: block;
+        width: 100%;
+    }
+
+    .page-4-review-list,
+    .page-5-review-list {
+        gap: 18px;
+    }
+
+    .page-4-review-card-1,
+    .page-4-review-card-2,
+    .page-4-review-card-3,
+    .page-4-review-card-4,
+    .page-5-review-card-1,
+    .page-5-review-card-2,
+    .page-5-review-card-3,
+    .page-5-review-card-4 {
+        justify-content: center;
+    }
+
+    .page-4-review-card,
+    .page-5-review-card {
         max-width: 100%;
     }
 
+    .page-4-review-card-text p:last-child,
+    .page-5-review-card-text p:last-child {
+        max-width: none;
+    }
+
+    .page-6-card-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ========================= FINAL PRACTICAL TUNING ========================= */
+.page-4-review-list {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    row-gap: 28px;
+}
+
+.page-4-review-card-1,
+.page-4-review-card-2,
+.page-4-review-card-3,
+.page-4-review-card-4 {
+    display: contents;
+}
+
+.page-4-review-card {
+    width: auto;
+    max-width: none;
+    min-height: 218px;
+    padding: 28px 30px;
+    gap: 22px;
+    box-shadow: 0 14px 34px rgba(17, 54, 155, 0.18);
+}
+
+.page-4-review-card-1 .page-4-review-card,
+.page-4-review-card-3 .page-4-review-card {
+    grid-column: 2 / span 3;
+}
+
+.page-4-review-card-2 .page-4-review-card,
+.page-4-review-card-4 .page-4-review-card {
+    grid-column: 3 / span 3;
+}
+
+.page-4-card-img {
+    flex-shrink: 0;
+}
+
+.page-4-card-img img {
+    width: 104px;
+    height: 104px;
+}
+
+.page-4-review-card-text {
+    min-width: 0;
+    flex: 1;
+}
+
+.page-4-review-card-text p:first-child {
+    margin-bottom: 6px;
+}
+
+.page-4-review-card-text p:last-child {
+    max-width: 31ch;
+    line-height: 1.7;
+}
+
+.page-6-card {
+    min-height: 0;
+}
+
+.page-6-card-feature-list {
+    word-break: keep-all;
+}
+
+@media (max-width: 1024px) {
     .page-4-review-list {
-        gap: 16px;
-        margin-top: 24px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        row-gap: 22px;
+    }
+
+    .page-4-review-card-1 .page-4-review-card,
+    .page-4-review-card-3 .page-4-review-card {
+        grid-column: 1 / span 3;
+    }
+
+    .page-4-review-card-2 .page-4-review-card,
+    .page-4-review-card-4 .page-4-review-card {
+        grid-column: 2 / span 3;
     }
 
     .page-4-review-card {
-        max-width: 340px;
-        min-height: 140px;
+        min-height: 200px;
+        padding: 24px 24px;
+    }
+
+    .page-4-review-card-text p:last-child {
+        max-width: 28ch;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-4 {
+        padding: 56px 0 64px;
+    }
+
+    .page-4-inner,
+    .page-6-inner,
+    .page-7-inner,
+    .page-8-inner,
+    .page-9-inner,
+    .footer-content {
+        width: calc(100% - 32px);
+    }
+
+    .page-4-review-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .page-4-review-card-1,
+    .page-4-review-card-2,
+    .page-4-review-card-3,
+    .page-4-review-card-4 {
+        display: block;
+    }
+
+    .page-4-review-card {
+        width: 100%;
+        min-height: 0;
+        border-radius: 22px;
+        padding: 16px 16px 18px;
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    .page-4-card-img img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .page-4-success-right {
+        width: 48px;
+        height: 18px;
+        font-size: 11px;
+        bottom: -6px;
+    }
+
+    .page-4-review-card-text p:first-child {
+        font-size: 14px !important;
+        line-height: 1.35;
+    }
+
+    .page-4-review-card-text p:last-child {
+        max-width: none;
+        font-size: 13px !important;
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .page-4-review-card-text br {
+        display: none;
+    }
+
+    .page-6 {
+        padding: 64px 0 60px;
+    }
+
+    .page-6-title {
+        gap: 10px;
+        margin-bottom: 28px;
+    }
+
+    .page-6-group + .page-6-group {
+        margin-top: 26px;
+    }
+
+    .page-6-group-head {
+        margin-bottom: 14px;
+        gap: 8px;
+    }
+
+    .page-6-group-head p {
+        font-size: 14px !important;
+        line-height: 1.5;
+    }
+
+    .page-6-group-head a {
+        font-size: 12px !important;
+        opacity: 0.9;
+    }
+
+    .page-6-card {
+        padding: 22px 18px 18px;
+        border-radius: 18px;
+    }
+
+    .page-6-card-price {
+        margin-top: 12px;
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    .page-6-card-feature-list {
+        margin-top: 14px;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .page-6-card-btn {
+        height: 50px;
+        margin-top: 4px;
+        font-size: 15px;
+    }
+
+    .page-6-order-box {
+        margin-top: 24px;
+        padding: 18px 16px;
+        border-radius: 16px;
+    }
+
+    .page-6-order-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .page-6-order-price {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .page-6-order-price strong {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 430px) {
+    .page-4-card-img img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .page-4-review-card {
+        padding: 14px 14px 16px;
         gap: 12px;
-        padding: 12px 14px;
-        border-radius: 20px;
+    }
+
+    .page-4-review-card-text p:last-child {
+        -webkit-line-clamp: 3;
+    }
+
+    .page-6-card {
+        padding: 20px 16px 16px;
+    }
+
+    .page-6-card-price {
+        font-size: 30px;
+    }
+
+    .page-6-card-feature-list {
+        font-size: 13px;
+        gap: 8px;
+    }
+}
+
+
+/* ========================= FINAL QA PATCH ========================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+.navi a:focus-visible,
+.page-6-card-btn:focus-visible,
+.page-6-order-btn:focus-visible,
+.apply-btn:focus-visible,
+.start_btn:focus-visible,
+.page-2-big-btn:focus-visible,
+.page-2-small-btn:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.72);
+    outline-offset: 3px;
+}
+
+.page-4-review-card,
+.page-5-review-card,
+.page-6-card,
+.page-6-order-box,
+.price-card {
+    box-sizing: border-box;
+}
+
+.page-4-review-card-text p:first-child,
+.page-5-review-card-text p:first-child {
+    letter-spacing: -0.01em;
+}
+
+.page-4-review-card-text p:last-child,
+.page-5-review-card-text p:last-child {
+    word-break: keep-all;
+}
+
+.page-4-review-card-2 .page-4-review-card,
+.page-4-review-card-4 .page-4-review-card {
+    flex-direction: row-reverse;
+}
+
+.page-6-group-head {
+    align-items: flex-start;
+}
+
+.page-6-group-head p {
+    max-width: 76ch;
+}
+
+.page-6-group-head a {
+    align-self: flex-start;
+    padding-top: 2px;
+}
+
+.page-6-card-list {
+    align-items: stretch;
+}
+
+.page-6-card {
+    min-height: 0;
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    gap: 0;
+}
+
+.page-6-card-best {
+    transform: none;
+}
+
+.page-6-card-price {
+    margin-bottom: 4px;
+}
+
+.page-6-card-feature-list {
+    min-height: 0;
+    margin-top: 24px;
+    margin-bottom: 26px;
+    padding-right: 4px;
+}
+
+.page-6-group-refund .page-6-card-feature-list {
+    min-height: 188px;
+}
+
+.page-6-group-go .page-6-card-feature-list {
+    min-height: 154px;
+}
+
+.page-6-card-btn {
+    align-self: stretch;
+    margin-top: 0;
+}
+
+.page-6-order-box {
+    align-items: center;
+}
+
+.page-6-order-price {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+@media (max-width: 1180px) {
+    .page-4-review-list {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        row-gap: 22px;
+    }
+
+    .page-4-review-card-1 .page-4-review-card,
+    .page-4-review-card-3 .page-4-review-card {
+        grid-column: 1 / span 6;
+    }
+
+    .page-4-review-card-2 .page-4-review-card,
+    .page-4-review-card-4 .page-4-review-card {
+        grid-column: 7 / span 6;
+    }
+
+    .page-6-card-list {
+        gap: 24px;
+    }
+
+    .page-6-card {
+        padding: 34px 26px 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-4-review-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 18px;
+        column-gap: 18px;
+    }
+
+    .page-4-review-card-1 .page-4-review-card,
+    .page-4-review-card-2 .page-4-review-card,
+    .page-4-review-card-3 .page-4-review-card,
+    .page-4-review-card-4 .page-4-review-card {
+        grid-column: auto;
+    }
+
+    .page-4-review-card {
+        min-height: 0;
+        padding: 24px 22px;
+    }
+
+    .page-4-review-card-text p:last-child {
+        max-width: none;
+    }
+
+    .page-6-card-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-6-group-refund .page-6-card-feature-list,
+    .page-6-group-go .page-6-card-feature-list {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-inner {
+        gap: 28px;
+    }
+
+    .price-card {
+        padding: 28px 20px;
+        border-radius: 24px;
+    }
+
+    .page-4-review-card-2 .page-4-review-card,
+    .page-4-review-card-4 .page-4-review-card {
+        flex-direction: row;
+    }
+
+    .page-4-review-card,
+    .page-5-review-card {
+        display: grid;
+        grid-template-columns: 72px minmax(0, 1fr);
+        align-items: start;
+    }
+
+    .page-4-card-img,
+    .page-5-card-img {
+        justify-self: start;
+    }
+
+    .page-4-review-card-text p:last-child,
+    .page-5-review-card-text p:last-child {
+        -webkit-line-clamp: 4;
+    }
+
+    .page-6-card-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .page-6-group-refund .page-6-card-feature-list,
+    .page-6-group-go .page-6-card-feature-list {
+        min-height: 0;
+        margin-bottom: 18px;
+    }
+
+    .page-6-card-btn {
+        height: 52px;
+    }
+
+    .page-6-order-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .page-6-order-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_wrap {
+        padding-inline: 14px;
+    }
+
+    .start_btn {
+        padding: 9px 14px;
+    }
+
+    .page-4-card-img img,
+    .page-5-card-img img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .page-4-review-card,
+    .page-5-review-card {
+        grid-template-columns: 64px minmax(0, 1fr);
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .page-4-review-card-text p:last-child,
+    .page-5-review-card-text p:last-child {
+        -webkit-line-clamp: 3;
+        font-size: 12.5px !important;
+    }
+
+    .page-6-group-head p {
+        max-width: none;
+    }
+
+    .page-6-card {
+        padding: 20px 16px 16px;
+    }
+
+    .page-6-card-price {
+        font-size: 32px;
+    }
+
+    .page-6-card-feature-list {
+        font-size: 13px;
+        gap: 8px;
+    }
+}
+
+
+/* ========================= FINAL SECTION FIX 2026-04-08 ========================= */
+.page-4-review-list {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+    align-items: start;
+}
+
+.page-4-review-card-1,
+.page-4-review-card-2,
+.page-4-review-card-3,
+.page-4-review-card-4 {
+    display: contents;
+}
+
+.page-4-review-card {
+    width: 100%;
+    max-width: 100%;
+    min-height: 206px;
+    padding: 26px 28px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.page-4-review-card-1 .page-4-review-card,
+.page-4-review-card-3 .page-4-review-card {
+    grid-column: 2 / span 5;
+}
+
+.page-4-review-card-2 .page-4-review-card,
+.page-4-review-card-4 .page-4-review-card {
+    grid-column: 7 / span 5;
+    flex-direction: row-reverse;
+}
+
+.page-4-card-img {
+    width: 96px;
+    min-width: 96px;
+    flex-shrink: 0;
+}
+
+.page-4-card-img img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+}
+
+.page-4-review-card-text {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.page-4-review-card-text p:first-child {
+    margin-bottom: 8px;
+}
+
+.page-4-review-card-text p:last-child {
+    max-width: none;
+    line-height: 1.72;
+    word-break: keep-all;
+}
+
+.page-4-review-card-text br {
+    display: none;
+}
+
+.page-6-card-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.page-6-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 36px 28px 28px;
+}
+
+.page-6-card-badge {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page-6-card-price {
+    margin-top: 14px;
+    line-height: 1;
+}
+
+.page-6-card-feature-list {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 22px;
+    margin-bottom: 24px;
+}
+
+.page-6-group-refund .page-6-card-feature-list {
+    min-height: 172px;
+}
+
+.page-6-group-go .page-6-card-feature-list {
+    min-height: 136px;
+}
+
+.page-6-card-btn {
+    margin-top: auto;
+}
+
+@media (max-width: 1100px) {
+    .page-4-review-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .page-4-review-card-1 .page-4-review-card,
+    .page-4-review-card-2 .page-4-review-card,
+    .page-4-review-card-3 .page-4-review-card,
+    .page-4-review-card-4 .page-4-review-card {
+        grid-column: auto;
+    }
+
+    .page-4-review-card {
+        min-height: 0;
+        padding: 22px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    .page-6-card-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    /* 3장일 때: 위 2장 + 아래 1장은 그리드 전체 너비(좁은 한 줄 가운데 정렬 제거) */
+    .page-6-card-list > .page-6-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: none;
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .page-6-card {
+        min-height: 0;
+    }
+
+    .page-6-card-best {
+        transform: none;
+    }
+
+    .page-6-group-refund .page-6-card-feature-list,
+    .page-6-group-go .page-6-card-feature-list {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-4-review-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .page-4-review-card-1,
+    .page-4-review-card-2,
+    .page-4-review-card-3,
+    .page-4-review-card-4 {
+        display: block;
+    }
+
+    .page-4-review-card,
+    .page-4-review-card-2 .page-4-review-card,
+    .page-4-review-card-4 .page-4-review-card {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 16px;
+        border-radius: 22px;
+    }
+
+    .page-4-card-img {
+        width: 72px;
+        min-width: 72px;
+        order: 0;
+    }
+
+    .page-4-card-img img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .page-4-review-card-text {
+        order: 1;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .page-4-success-right {
+        width: 52px;
+        height: 20px;
+        bottom: -7px;
+        font-size: 12px;
+    }
+
+    .page-4-review-card-text p:first-child {
+        font-size: 14px !important;
+        line-height: 1.4;
+    }
+
+    .page-4-review-card-text p:last-child {
+        font-size: 13px !important;
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .page-6-card-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .page-6-card-list > .page-6-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .page-6-card {
+        padding: 22px 18px 18px;
+    }
+
+    .page-6-group-refund .page-6-card-feature-list,
+    .page-6-group-go .page-6-card-feature-list {
+        min-height: 0;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-4-review-card {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .page-4-card-img {
+        width: 64px;
+        min-width: 64px;
     }
 
     .page-4-card-img img {
@@ -1111,10 +2876,505 @@ body {
         height: 64px;
     }
 
-    .page-4-success-right {
-        width: 48px;
-        height: 18px;
-        bottom: -6px;
-        font-size: 11px;
+    .page-4-review-card-text p:last-child {
+        -webkit-line-clamp: 3;
+        font-size: 12.5px !important;
+    }
+
+    .page-6-card {
+        padding: 20px 16px 16px;
     }
 }
+
+/* ========================= FINAL VISUAL PATCH 2 ========================= */
+.page-4-review-list {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 18px 0;
+    max-width: 760px;
+    margin: 28px auto 0;
+}
+
+.page-4-review-card-1,
+.page-4-review-card-2,
+.page-4-review-card-3,
+.page-4-review-card-4 {
+    display: contents;
+}
+
+.page-4-review-card-1 .page-4-review-card,
+.page-4-review-card-3 .page-4-review-card {
+    grid-column: 2 / span 6;
+}
+
+.page-4-review-card-2 .page-4-review-card,
+.page-4-review-card-4 .page-4-review-card {
+    grid-column: 6 / span 6;
+}
+
+.page-4-review-card {
+    min-height: 0;
+    padding: 18px 20px;
+    gap: 14px;
+    border-radius: 16px;
+    align-items: center;
+    box-shadow: 0 10px 26px rgba(18, 44, 130, 0.16);
+}
+
+.page-4-card-img {
+    width: 64px;
+    min-width: 64px;
+}
+
+.page-4-card-img img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.page-4-success-right {
+    width: 40px;
+    height: 16px;
+    bottom: -5px;
+    font-size: 10px;
+}
+
+.page-4-review-card-text p:first-child {
+    margin-bottom: 4px;
+    font-size: 11px !important;
+    line-height: 1.35;
+}
+
+.page-4-review-card-text p:last-child {
+    max-width: none;
+    font-size: 12px !important;
+    line-height: 1.55;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.page-6-card-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.page-6-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    padding: 34px 26px 26px;
+}
+
+.page-6-card-price {
+    margin-top: 14px;
+    margin-bottom: 18px;
+    line-height: 1;
+}
+
+.page-6-card-feature-list {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 0;
+    margin-bottom: 22px;
+    padding: 0;
+}
+
+.page-6-group-refund .page-6-card-feature-list {
+    min-height: 146px;
+}
+
+.page-6-group-go .page-6-card-feature-list {
+    min-height: 116px;
+}
+
+.page-6-card-btn {
+    margin-top: auto;
+}
+
+@media (max-width: 1100px) {
+    .page-4-review-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        max-width: 860px;
+    }
+
+    .page-4-review-card-1 .page-4-review-card,
+    .page-4-review-card-2 .page-4-review-card,
+    .page-4-review-card-3 .page-4-review-card,
+    .page-4-review-card-4 .page-4-review-card {
+        grid-column: auto;
+    }
+
+    .page-4-review-card {
+        padding: 18px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    .page-6-card-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .page-6-card-list > .page-6-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: none;
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .page-6-card {
+        min-height: 0;
+    }
+
+    .page-6-card-best {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-4-review-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: none;
+        margin-top: 24px;
+    }
+
+    .page-4-review-card-1,
+    .page-4-review-card-2,
+    .page-4-review-card-3,
+    .page-4-review-card-4 {
+        display: block;
+    }
+
+    .page-4-review-card,
+    .page-4-review-card-2 .page-4-review-card,
+    .page-4-review-card-4 .page-4-review-card {
+        display: grid !important;
+        grid-template-columns: 72px minmax(0, 1fr);
+        align-items: start;
+        gap: 14px;
+        padding: 18px 18px 20px;
+        border-radius: 22px;
+    }
+
+    .page-4-card-img {
+        width: 72px;
+        min-width: 72px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .page-4-card-img img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .page-4-review-card-text {
+        grid-column: 2;
+        grid-row: 1;
+        min-width: 0;
+    }
+
+    .page-4-review-card-text p:first-child {
+        font-size: 14px !important;
+        line-height: 1.4;
+        margin-bottom: 6px;
+    }
+
+    .page-4-review-card-text p:last-child {
+        font-size: 13px !important;
+        line-height: 1.6;
+        -webkit-line-clamp: 4;
+    }
+
+    .page-6-card-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .page-6-card-list > .page-6-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .page-6-card {
+        padding: 22px 18px 18px;
+    }
+
+    .page-6-group-refund .page-6-card-feature-list,
+    .page-6-group-go .page-6-card-feature-list {
+        min-height: 0;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-4-review-card {
+        grid-template-columns: 64px minmax(0, 1fr) !important;
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .page-4-card-img {
+        width: 64px;
+        min-width: 64px;
+    }
+
+    .page-4-card-img img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/* ========================= PAGE 2.5: 강사진 무한 스크롤 ========================= */
+.two-page {
+    --lecturer-gap: 1.625rem;
+    padding: 5.75rem 0 6.25rem;
+    background: linear-gradient(180deg, #8fc8f4 0%, #dbe6ef 100%);
+    overflow: hidden;
+}
+
+.two-content {
+    width: 100%;
+    max-width: 92.5rem;
+    margin: 0 auto;
+}
+
+.two-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.25rem;
+    text-align: center;
+}
+
+.pass-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.625rem;
+    padding: 0 1.125rem;
+    border-radius: 62.4375rem;
+    background: rgba(255, 255, 255, 0.16);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(0.375rem);
+}
+
+.lecturer-marquee {
+    position: relative;
+    margin-top: 2.375rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.625rem 0 0.75rem;
+    cursor: grab;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    scrollbar-width: none;
+    mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
+}
+
+.lecturer-marquee::-webkit-scrollbar {
+    display: none;
+}
+
+.lecturer-marquee.is-dragging {
+    cursor: grabbing;
+    scroll-snap-type: none;
+}
+
+.lecturer-group {
+    display: flex;
+    align-items: stretch;
+    gap: var(--lecturer-gap);
+    width: max-content;
+    padding: 0 1.75rem;
+}
+
+.lecturer {
+    flex: 0 0 auto;
+    width: 14.25rem;
+    min-width: 14.25rem;
+    min-height: 18.75rem;
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 0.625rem 1.75rem rgba(30, 76, 144, 0.10);
+    padding: 1.125rem 1.125rem 1.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    scroll-snap-align: start;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.lecturer:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1rem 2.125rem rgba(30, 76, 144, 0.14);
+}
+
+.lecturer-image {
+    width: 100%;
+    height: 12.25rem;
+    border-radius: 1.125rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: transparent;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.lecturer-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+.lecturer-text {
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+}
+
+.lecturer-text p {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.5rem;
+    line-height: 1.15;
+    color: #4d4d4d;
+}
+
+.lecturer-text span {
+    display: inline-block;
+    margin-top: 0;
+    line-height: 1.1;
+    color: #333333;
+}
+
+@media (max-width: 80rem) {
+    .two-content {
+        max-width: 82.5rem;
+    }
+
+    .lecturer {
+        width: 13.75rem;
+        min-width: 13.75rem;
+        min-height: 18.125rem;
+    }
+
+    .lecturer-image {
+        height: 11.625rem;
+    }
+}
+
+@media (max-width: 64rem) {
+    .two-page {
+        --lecturer-gap: 1.375rem;
+        padding: 5.125rem 0 5.5rem;
+    }
+
+    .lecturer-marquee {
+        margin-top: 2.125rem;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .lecturer-group {
+        padding: 0 1.375rem;
+    }
+
+    .lecturer {
+        width: 14.75rem;
+        min-width: 14.75rem;
+        min-height: 19rem;
+        padding: 1.125rem 1.125rem 1.375rem;
+    }
+
+    .lecturer-image {
+        height: 12.75rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .two-page {
+        --lecturer-gap: 1.125rem;
+        padding: 4rem 0 4.5rem;
+    }
+
+    .two-title {
+        gap: 0.75rem;
+        padding: 0 1rem;
+    }
+
+    .pass-box {
+        min-height: 2.375rem;
+        padding: 0 0.875rem;
+    }
+
+    .lecturer-marquee {
+        margin-top: 1.75rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .lecturer-group {
+        padding: 0 1rem;
+    }
+
+    .lecturer {
+        width: 14rem;
+        min-width: 14rem;
+        min-height: 18.25rem;
+        border-radius: 1.375rem;
+    }
+
+    .lecturer-image {
+        height: 11.875rem;
+        border-radius: 1rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .two-page {
+        padding: 3.5rem 0 4rem;
+    }
+
+    .lecturer {
+        width: 12.375rem;
+        min-width: 12.375rem;
+        min-height: 16.25rem;
+        padding: 1rem 1rem 1.25rem;
+    }
+
+    .lecturer-image {
+        height: 10.125rem;
+    }
+
+    .lecturer-text p {
+        gap: 0.375rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lecturer-marquee {
+        scroll-behavior: auto;
+    }
+}
+

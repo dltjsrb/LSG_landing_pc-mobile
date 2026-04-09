@@ -64,6 +64,34 @@
 
 
 
+:root {
+    /* Color tokens */
+    --color-text-primary: #1A1209;
+    --color-text-secondary: #515151;
+    --color-text-muted: #6b6b6b;
+    --color-text-dark: #333;
+    --color-white: #fff;
+    --color-brand-1: #106DEA;
+    --color-brand-2: #2249FF;
+    --color-brand-3: #2498F2;
+    --color-brand-4: #83C9FD;
+    --color-brand-5: #4f7fff;
+    --color-brand-6: #7AC6FD;
+    --color-bg-light: #f7f7f7;
+    /* page-8 이벤트 상품: 원형 테두리·뱃지 */
+    --color-event-image-ring: #9bd8ff;
+    --color-event-box-border: #3159ff;
+}
+
+/* Accessible base scaling for user readability */
+html {
+    font-size: clamp(0.9375rem, 0.2vw + 0.9rem, 1rem);
+}
+
+body {
+    color: var(--color-text-primary);
+}
+
     /* =========================
    1) 조합형 클래스
    - 여러 역할이 같이 들어간 전용 클래스
@@ -105,33 +133,36 @@
    - font-size 중심
 ========================= */
 .font-size-hero {
-    font-size: clamp(3.875rem, 10vw, 6.375rem);
+    font-size: clamp(3rem, 7vw, 6.375rem);
 }
 .font-size-14-16{
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-size: clamp(0.8125rem, 1vw + 0.55rem, 1rem);
 }
 
 .font-size-16-20 {
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
-    
+    font-size: clamp(0.9375rem, 1vw + 0.65rem, 1.25rem);
 }
 .font-size-23-38 {
-    font-size: clamp(1.4375rem, 2vw, 2.375rem);
+    font-size: clamp(1.25rem, 2vw + 0.5rem, 2.375rem);
 }
 
 .font-size-16-24 {
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 1.2vw + 0.7rem, 1.5rem);
 }
 .font-size-32-52{
-    font-size: clamp(2rem, 2vw, 3.25rem);
+    font-size: clamp(1.75rem, 2.4vw + 0.6rem, 3.25rem);
 }
 
 .font-size-48-58 {
-    font-size: clamp(3rem, 4vw, 3.625rem);
+    font-size: clamp(2rem, 2.8vw + 0.7rem, 3.625rem);
 }
 .font-size-50-70 {
-    font-size: clamp(3.125rem, 4vw, 4.375rem);
+    font-size: clamp(2.125rem, 3vw + 0.9rem, 4.375rem);
 }
+.font-size-12 {
+    font-size: 0.75rem;
+}
+
 .font-size-14{
     font-size: 0.875rem;
 }
@@ -139,44 +170,57 @@
 .font-size-16{
     font-size: 1rem;
 }
+
+.font-size-20 {
+    font-size: 1.25rem;
+}
+
+.font-size-24{
+    font-size: 1.5rem;
+}
+
+.font-size-32{
+    font-size: 2rem;
+}
 .font-size-18-32 {
-    font-size: clamp(1.125rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.4vw + 0.75rem, 2rem);
 }
 
 .font-size-16-18 {
-    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    font-size: clamp(0.9375rem, 0.8vw + 0.7rem, 1.125rem);
 }
 
 .font-size-22-42 {
-    font-size: clamp(1.375rem, 2vw, 2.625rem);
+    font-size: clamp(1.25rem, 2vw + 0.45rem, 2.625rem);
 }
 
 .font-size-14-17{
-    font-size: clamp(0.875rem, 1.5vw, 1.0625rem);
+    font-size: clamp(0.8125rem, 0.8vw + 0.6rem, 1.0625rem);
 }
 
 .font-size-20-34 {
-    font-size: clamp(1.25rem, 2vw, 2.125rem);
+    font-size: clamp(1.125rem, 1.7vw + 0.55rem, 2.125rem);
 }
 
 .font-size-38-48 {
-    font-size: clamp(2.375rem, 4vw, 3rem);
+    font-size: clamp(2rem, 2vw + 0.8rem, 3rem);
 }
 
 .font-size-25-32 {
-    font-size: clamp(1.5625rem, 2vw, 2rem);
+    font-size: clamp(1.375rem, 1.2vw + 0.9rem, 2rem);
 }
 
 .font-size-22-32 {
-    font-size: clamp(1.375rem, 2vw, 2rem);
+    font-size: clamp(1.25rem, 1.3vw + 0.8rem, 2rem);
 }
 
 .font-size-42-52 {
-    font-size: clamp(2.625rem, 4vw, 3.25rem);
+    font-size: clamp(2.125rem, 1.8vw + 1rem, 3.25rem);
 }
 .font-size-25-42 {
-    font-size: clamp(1.5625rem, 4vw, 2.625rem);
+    font-size: clamp(1.5rem, 2vw + 0.7rem, 2.625rem);
 }
+
 
 
 
@@ -194,15 +238,15 @@
    - color 중심
 ========================= */
 .font-color-1A1209 {
-    color: #1A1209;
+    color: var(--color-text-primary);
 }
 
 .font-color-106DEA {
-    color: #106DEA;
+    color: var(--color-brand-1);
 }
 
 .font-color-2249FF {
-    color: #2249FF;
+    color: var(--color-brand-2);
 }
 
 .font-color-FFEE00 {
@@ -210,14 +254,63 @@
 }
 
 .font-color-515151 {
-    color: #515151;
+    color: var(--color-text-secondary);
 }
 
 .font-color-333 {
-    color: #333;
+    color: var(--color-text-dark);
 }
 
 .font-color-fff {
-    color: #fff;
+    color: var(--color-white);
 }
 
+.bg-color-brand-1 {
+    background-color: var(--color-brand-1);
+}
+
+.bg-color-brand-2 {
+    background-color: var(--color-brand-2);
+}
+
+.bg-color-brand-3 {
+    background-color: var(--color-brand-3);
+}
+
+.bg-color-brand-4 {
+    background-color: var(--color-brand-4);
+}
+
+.bg-color-white {
+    background-color: var(--color-white);
+}
+
+.bg-color-light {
+    background-color: var(--color-bg-light);
+}
+
+
+
+.text-break-keep {
+    word-break: keep-all;
+}
+
+@media (max-width: 48rem) {
+    .font-size-32 {
+        font-size: 1.75rem;
+    }
+
+    .font-size-24 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .font-size-32 {
+        font-size: 1.5rem;
+    }
+
+    .font-size-24 {
+        font-size: 1.125rem;
+    }
+}

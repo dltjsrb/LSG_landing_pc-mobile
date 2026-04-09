@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSG DOING</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header class="header_wrap">
         <nav class="nav">
-            <button class="menu_btn" type="button" aria-label="메뉴 열기">
+            <button class="menu_btn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-menu">
                 <img src="assets/images/icon/hambuger.svg" alt="메뉴 아이콘">
             </button>
             <div class="lsg_Logo">
                 <img src="assets/images/icon/lsg_logo.svg" alt="lsg_로고사진">
             </div>
-            <div class="gnb">
+            <div class="gnb" id="site-menu">
                 <ul class="navi font-weight-bold font-color-fff">
-                    <li><a href="#">핵심 포인트</a></li>
-                    <li><a href="#">강사진</a></li>
-                    <li><a href="#">인강기능</a></li>
-                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#core-point">핵심 포인트</a></li>
+                    <li><a href="#teachers">강사진</a></li>
+                    <li><a href="#features">인강기능</a></li>
+                    <li><a href="#event">이벤트</a></li>
                 </ul>
             </div>
             <div class="start">
@@ -35,12 +36,12 @@
     </header>
 
     <!-- ✅ KV: 메인 히어로 배너 (변경 없음) -->
-    <section class="hero">
+    <section class="hero" id="core-point">
         <div class="hero-inner">
             <div class="hero-title">
                 <div class="badge-box font-weight-semibold">
                     <p class="font-size-14-16 font-color-fff">
-                        <span class="font-color-2249FF">●</span> 2027 수험생을 위한 프리미엄 인강 패스  
+                        <span class="font-color-2249FF">●</span> 2027 수험생을 위한 프리미엄 인강 패스
                     </p>
                 </div>
                 <h1 class="font-size-hero font-color-106DEA">
@@ -78,6 +79,80 @@
         </div>
     </section>
 
+    <section class="two-page" id="teachers">
+        <div class="two-content">
+            <div class="two-title">
+                <div class="pass-box font-weight-semibold">
+                    <p class="font-size-16 font-color-fff">
+                        <span class="font-color-2249FF">●</span> 2027 수험생을 위한 프리미엄 인강 패스
+                    </p>
+                </div>
+                <p class="font-size-32 font-color-FFEE00 font-weight-semibold">
+                    2027 스타⭐ LineUp
+                </p>
+            </div>
+
+
+            <div class="lecturer-marquee" aria-label="강사진 가로 스크롤" tabindex="0">
+                <div class="lecturer-group">
+                    <div class="lecturer">
+                        <div class="lecturer-image">
+                            <img class="img_pad" src="assets/images/icon/histoy.svg" alt="한국사 강사 사진">
+                        </div>
+                        <div class="lecturer-text font-color-333">
+                            <p class="font-size-24 font-weight-regular">
+                                한국사 <span class="font-size-32 font-weight-bold">이승기</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lecturer">
+                        <div class="lecturer-image">
+                            <img class="img_pad" src="assets/images/icon/korean.svg" alt="국어 강사 사진">
+                        </div>
+                        <div class="lecturer-text font-color-333">
+                            <p class="font-size-24 font-weight-regular">
+                                국어 <span class="font-size-32 font-weight-bold">김이승</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lecturer">
+                        <div class="lecturer-image">
+                            <img class="img_pad" src="assets/images/icon/math.svg" alt="수학 강사 사진">
+                        </div>
+                        <div class="lecturer-text font-color-333">
+                            <p class="font-size-24 font-weight-regular">
+                                수학 <span class="font-size-32 font-weight-bold">정우진</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lecturer">
+                        <div class="lecturer-image">
+                            <img class="img_pad" src="assets/images/icon/english.svg" alt="영어 강사 사진">
+                        </div>
+                        <div class="lecturer-text font-color-333">
+                            <p class="font-size-24 font-weight-regular">
+                                영어 <span class="font-size-32 font-weight-bold">조명학</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lecturer">
+                        <div class="lecturer-image">
+                            <img class="img_pad" src="assets/images/icon/ches.svg" alt="화학 강사 사진">
+                        </div>
+                        <div class="lecturer-text font-color-333">
+                            <p class="font-size-24 font-weight-regular">
+                                화학 <span class="font-size-32 font-weight-bold">백석영</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ✅ PAGE 2: 환급 섹션 -->
     <section class="page-2">
         <div class="page-2-inner">
@@ -102,8 +177,11 @@
         </div>
     </section>
 
+    <!-- ✅ PAGE 2-5: 강사진 무한 스크롤 섹션 -->
+
+
     <!-- ✅ PAGE 3: 수석 후기 섹션 -->
-    <section class="page-3">
+    <section class="page-3" id="results">
         <div class="page-3-inner">
             <div class="page-3-title font-weight-bold font-color-1A1209">
                 <p class="font-size-18-32 page-3-title-year font-weight-bold">
@@ -224,13 +302,14 @@
                     <div class="page-4-review-card">
 
                         <div class="page-4-card-img">
-                            <img src="assets/images/icon/kimmin.svg" alt="">
+                            <img src="assets/images/icon/kimmin.svg" alt="서울대학교 김민 합격생 사진">
                             <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
                         </div>
                         <div class="page-4-review-card-text">
                             <p class="font-size-14-16 font-color-1A1209 font-weight-medium page-4-">서울대학교 김*민</p>
                             <p class="font-size-16-18 font-color-1A1209 font-weight-light">
-                                LSG패스 신청하고 가장 만족한 건 강의 구성이에요. 과목별로 필요한 <br>강좌를 한 번에 들을 수 있어서 이것저것 따로 결제할 필요가 없었고,<br> 공부 계획
+                                LSG패스 신청하고 가장 만족한 건 강의 구성이에요. 과목별로 필요한 <br>강좌를 한 번에 들을 수 있어서 이것저것 따로 결제할 필요가 없었고,<br> 공부
+                                계획
                                 세우기도 훨씬 편해졌어요. 혼자 공부할 때보다 훨씬 체계적으로 <br> 준비할 수 있어서 만족합니다.
                             </p>
                         </div>
@@ -248,7 +327,7 @@
                             </p>
                         </div>
                         <div class="page-4-card-img">
-                            <img src="assets/images/icon/leelarm.svg" alt="">
+                            <img src="assets/images/icon/leelarm.svg" alt="연세대학교 이람 합격생 사진">
                             <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
                         </div>
 
@@ -259,7 +338,7 @@
                     <div class="page-4-review-card">
 
                         <div class="page-4-card-img">
-                            <img src="assets/images/icon/hajin.svg" alt="">
+                            <img src="assets/images/icon/hajin.svg" alt="경희대학교 하진 합격생 사진">
                             <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
                         </div>
                         <div class="page-4-review-card-text">
@@ -285,7 +364,7 @@
                             </p>
                         </div>
                         <div class="page-4-card-img">
-                            <img src="assets/images/icon/jhohyo.svg" alt="">
+                            <img src="assets/images/icon/jhohyo.svg" alt="중앙대학교 조현 합격생 사진">
                             <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
                         </div>
 
@@ -298,7 +377,464 @@
 
 
 
+    <section class="page-6" id="features">
+        <div class="page-6-inner">
+            <div class="page-6-title">
+                <p class="font-size-25-42 font-color-fff font-weight-bold">나에게 맞는 LSG PASS 선택하기</p>
+                <p class="font-size-16 font-color-fff font-weight-medium">목표와 학습 스타일에 맞는 패스를 선택해보세요</p>
+            </div>
 
+            <div class="page-6-group page-6-group-refund">
+                <div class="page-6-group-head">
+                    <p class="font-color-fff font-size-16 font-weight-semibold">▼ LSG패스(고3_환급형) - 수능, 내신 포함 사이트 전 강좌
+                        무제한에 수강료 환급혜택까지!</p>
+                    <a href="#" class="font-color-fff font-size-14">환급관련 유의상황</a>
+                </div>
+
+                <div class="page-6-card-list">
+                    <div class="page-6-card">
+                        <p class="font-size-22-32 font-color-1A1209 font-weight-bold">LSG PASS Basic</p>
+                        <p class="page-6-card-price font-size-42-52 font-weight-bold font-color-106DEA">49만원</p>
+                        <ul class="page-6-card-feature-list font-size-16 font-color-333">
+                            <li>모든 강의 수강</li>
+                            <li>모의고사 제공</li>
+                            <li>교재 10%할인 </li>
+                            <li>주요대학 입학 시 수강료 환급 </li>
+                        </ul>
+                        <button type="button"
+                            class="page-6-card-btn font-size-16 font-weight-semibold font-color-fff">패스 선택하기</button>
+                    </div>
+
+                    <div class="page-6-card page-6-card-best">
+                        <span class="page-6-card-badge font-size-14 font-weight-bold font-color-1A1209">MOST
+                            POPULAR</span>
+                        <p class="font-size-22-32 font-color-1A1209 font-weight-bold">LSG PASS+</p>
+                        <p class="page-6-card-price font-size-42-52 font-weight-bold font-color-106DEA">85만원</p>
+                        <ul class="page-6-card-feature-list font-size-16 font-color-333">
+                            <li>모든 강의 수강</li>
+                            <li>모의고사 제공</li>
+                            <li>교재 15%할인 </li>
+                            <li>교재 캐쉬 30만원 무료배송 쿠폰 8개 </li>
+                            <li>주요대학 입학 시 수강료 환급 </li>
+                        </ul>
+                        <button type="button"
+                            class="page-6-card-btn font-size-16 font-weight-semibold font-color-fff">패스 선택하기</button>
+                    </div>
+
+                    <div class="page-6-card">
+                        <p class="font-size-22-32 font-color-1A1209 font-weight-bold">LSG PASS ++</p>
+                        <p class="page-6-card-price font-size-42-52 font-weight-bold font-color-106DEA">105만원</p>
+                        <ul class="page-6-card-feature-list font-size-16 font-color-333">
+                            <li>모든 강의 수강</li>
+                            <li>모의고사 제공</li>
+                            <li>교재 17%할인 </li>
+                            <li>1:1 질문</li>
+                            <li>교재 캐쉬 30만원 무료배송 쿠폰 10개 </li>
+                            <li>주요대학 입학 시 수강료 환급 </li>
+                        </ul>
+                        <button type="button"
+                            class="page-6-card-btn font-size-16 font-weight-semibold font-color-fff">패스 선택하기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-6-group page-6-group-go">
+                <div class="page-6-group-head">
+                    <p class="font-color-fff font-size-16 font-weight-semibold">▼ LSG GO 패스 (국어·영어·수학)</p>
+
+                </div>
+
+                <div class="page-6-card-list">
+                    <div class="page-6-card">
+                        <p class="font-size-22-32 font-color-1A1209 font-weight-bold">LSG GO PASS Basic</p>
+                        <p class="page-6-card-price font-size-42-52 font-weight-bold font-color-106DEA">39만원</p>
+                        <ul class="page-6-card-feature-list font-size-16 font-color-333">
+                            <li>모든 강의 수강</li>
+                            <li>모의고사 제공</li>
+                            <li>교재 10%할인 </li>
+                        </ul>
+                        <button type="button"
+                            class="page-6-card-btn font-size-16 font-weight-semibold font-color-fff">패스 선택하기</button>
+                    </div>
+
+                    <div class="page-6-card page-6-card-best">
+                        <span class="page-6-card-badge font-size-14 font-weight-bold font-color-1A1209">MOST
+                            POPULAR</span>
+                        <p class="font-size-22-32 font-color-1A1209 font-weight-bold">LSG GO PASS+</p>
+                        <p class="page-6-card-price font-size-42-52 font-weight-bold font-color-106DEA">75만원</p>
+                        <ul class="page-6-card-feature-list font-size-16 font-color-333">
+                            <li>모든 강의 수강</li>
+                            <li>모의고사 제공</li>
+                            <li>교재 15%할인 </li>
+                            <li>교재 캐쉬 30만원 무료배송 쿠폰 8개 </li>
+                        </ul>
+                        <button type="button"
+                            class="page-6-card-btn font-size-16 font-weight-semibold font-color-fff">패스 선택하기</button>
+                    </div>
+
+                    <div class="page-6-card">
+                        <p class="font-size-22-32 font-color-1A1209 font-weight-bold">LSG GO PASS ++</p>
+                        <p class="page-6-card-price font-size-42-52 font-weight-bold font-color-106DEA">95만원</p>
+                        <ul class="page-6-card-feature-list font-size-16 font-color-333">
+                            <li>모든 강의 수강</li>
+                            <li>모의고사 제공</li>
+                            <li>교재 17%할인 </li>
+                            <li>1:1 질문</li>
+                            <li>교재 캐쉬 30만원 무료배송 쿠폰 10개 </li>
+                        </ul>
+                        <button type="button"
+                            class="page-6-card-btn font-size-16 font-weight-semibold font-color-fff">패스 선택하기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-6-order-box">
+                <div class="page-6-order-info">
+                    <p class="font-size-16 font-weight-bold font-color-1A1209">선택상품</p>
+                    <div class="page-6-order-price">
+                        <span class="font-size-14 font-color-515151">결제 예정금액</span>
+                        <strong class="font-size-32 font-weight-bold font-color-2249FF">0원</strong>
+                    </div>
+                </div>
+                <button type="button"
+                    class="page-6-order-btn font-size-24 font-weight-bold font-color-fff">구매하기</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-7">
+        <div class="page-7-inner">
+            <div class="page-7-title">
+                <p class="font-color-1A1209 font-size-25-42 font-weight-bold">
+                    인강 결제 직전<br>가장 많이 보는 질문들
+                </p>
+            </div>
+
+            <div class="page-7-grid">
+                <div class="page-7-card">
+                    <span class="page-7-number font-size-14 font-weight-bold font-color-106DEA">01</span>
+                    <h3 class="font-size-24 font-weight-bold font-color-1A1209">어떤 강의가 포함되나요?</h3>
+                    <p class="font-size-16 font-color-515151">전 과목 강의, AI 리포트, 질문답변, 모의고사 콘텐츠 포함 범위가 패스별로 다르게 제공됩니다.</p>
+                </div>
+
+                <div class="page-7-card">
+                    <span class="page-7-number font-size-14 font-weight-bold font-color-106DEA">02</span>
+                    <h3 class="font-size-24 font-weight-bold font-color-1A1209">환급 조건은 어떻게 되나요?</h3>
+                    <p class="font-size-16 font-color-515151">[2027 수시합격예측] 또는 [2027 정시합격예측] 목표대학저장(모의지원) 합산해 총 3건 이상
+                        완료시 환급 해 드립니다.</p>
+                </div>
+
+                <div class="page-7-card">
+                    <span class="page-7-number font-size-14 font-weight-bold font-color-106DEA">03</span>
+                    <h3 class="font-size-24 font-weight-bold font-color-1A1209">모바일로도 모든 강의 수강 가능한가요?</h3>
+                    <p class="font-size-16 font-color-515151">모바일, 태블릿, PC 어디서든 로그인 후 동일한 강의를 편리하게 이용할 수 있습니다.</p>
+                </div>
+
+                <div class="page-7-card">
+                    <span class="page-7-number font-size-14 font-weight-bold font-color-106DEA">04</span>
+                    <h3 class="font-size-24 font-weight-bold font-color-1A1209">샘플강의와 커리큘럼은 미리 볼 수 있나요?</h3>
+                    <p class="font-size-16 font-color-515151">샘플강의, 강사 소개, 커리큘럼, 학습 상담까지 결제 전에도 충분히 확인할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-8" id="event">
+        <div class="page-8-inner">
+            <div class="page-8-title">
+                <span class="page-8-chip font-size-24 font-weight-bold font-color-106DEA">EVENT</span>
+                <p class="font-size-32 font-color-fff font-weight-bold">새 학기 고민, 상담하고 함께 START</p>
+                <p class="font-size-24 font-color-2249FF font-weight-bold">새 학기 목표를 상담을 통해 더 구체적으로 세워보세요!</p>
+                <p class="font-size-20 font-color-fff font-weight-medium">LSG패스를 함께하는 2026년 새 학기 상담 이벤트</p>
+                <p class="font-size-16 font-color-fff font-weight-medium">상담을 하신 분들 중 추첨을 통해 선물을 드립니다</p>
+            </div>
+
+            <div class="page-8-box">
+                <div class="page-8-item">
+                    <div class="page-8-item-visual">
+                        <div class="page-8-item-image">
+                            <img class="img_pad" src="assets/images/icon/nike.svg" alt="이벤트 상품 이미지">
+                        </div>
+                        <span class="page-8-item-badge font-size-14 font-weight-bold font-color-fff">1명</span>
+                    </div>
+                    <p class="page-8-item-label font-size-14 font-color-333 font-weight-medium">나이키 운동화</p>
+                </div>
+
+                <div class="page-8-item">
+                    <div class="page-8-item-visual">
+                        <div class="page-8-item-image">
+                            <img class="img_pad" src="assets/images/icon/snackset.svg" alt="이벤트 상품 이미지">
+                        </div>
+                        <span class="page-8-item-badge font-size-14 font-weight-bold font-color-fff">15명</span>
+                    </div>
+                    <p class="page-8-item-label font-size-14 font-color-333 font-weight-medium">맛있는 간식 세트</p>
+                </div>
+
+                <div class="page-8-item">
+                    <div class="page-8-item-visual">
+                        <div class="page-8-item-image">
+                            <img class="img_pad" src="assets/images/icon/icecream.svg" alt="이벤트 상품 이미지">
+                        </div>
+                        <span class="page-8-item-badge font-size-14 font-weight-bold font-color-fff">25명</span>
+                    </div>
+                    <p class="page-8-item-label font-size-14 font-color-333 font-weight-medium">달콤한 디저트</p>
+                </div>
+
+                <div class="page-8-item">
+                    <div class="page-8-item-visual">
+                        <div class="page-8-item-image page-8-item-image--precomposed-photo">
+                            <img class="img_pad" src="assets/images/icon/noddle.png" alt="이벤트 상품 이미지">
+                        </div>
+                        <span class="page-8-item-badge font-size-14 font-weight-bold font-color-fff">50명</span>
+                    </div>
+                    <p class="page-8-item-label font-size-14 font-color-333 font-weight-medium">컵라면 기프티콘</p>
+                </div>
+            </div>
+
+            <p class="page-8-period font-size-12 font-color-333">이벤트 기간 : 2026.03.01(일) ~ 2026.03.31(화) · 발표일 : 4월 첫째 주</p>
+        </div>
+    </section>
+
+    <section class="page-9">
+        <div class="page-9-inner">
+            <div class="page-9-title">
+                <p class="font-size-25-42 font-color-2249FF font-weight-bold">무료 컨설팅 신청</p>
+                <p class="font-size-22-32 font-color-2249FF font-weight-bold">1분이면 신청 완료! 부담 없이 문의주세요.</p>
+            </div>
+
+            <form class="page-9-form">
+                <div class="page-9-form-group">
+                    <label for="name" class="font-size-16 font-weight-bold font-color-1A1209">이름 <span
+                            class="font-color-106DEA">*</span></label>
+                    <input id="name" class="font-size-16 font-color-333" type="text" placeholder="홍길동">
+                </div>
+
+                <div class="page-9-form-group">
+                    <label for="phone" class="font-size-16 font-weight-bold font-color-1A1209">연락처 <span
+                            class="font-color-106DEA">*</span></label>
+                    <input id="phone" class="font-size-16 font-color-333" type="text" placeholder="010-0000-0000">
+                </div>
+
+                <div class="page-9-form-group">
+                    <label for="email" class="font-size-16 font-weight-bold font-color-1A1209">이메일 <span
+                            class="font-color-106DEA">*</span></label>
+                    <input id="email" class="font-size-16 font-color-333" type="email" placeholder="example@email.com">
+                </div>
+
+                <div class="page-9-form-group">
+                    <label for="time" class="font-size-16 font-weight-bold font-color-1A1209">상담 희망시간 <span
+                            class="font-color-106DEA">*</span></label>
+                    <select id="time" class="font-size-16 font-color-333">
+                        <option>시간대를 선택해 주세요</option>
+                        <option>오전 10:00 ~ 12:00</option>
+                        <option>오후 1:00 ~ 3:00</option>
+                        <option>오후 3:00 ~ 5:00</option>
+                        <option>오후 6:00 ~ 8:00</option>
+                    </select>
+                </div>
+
+                <button type="button"
+                    class="page-9-privacy-btn font-size-16 font-weight-semibold font-color-1A1209">개인정보 수집 및 이용에 동의합니다.
+                    [상세보기]</button>
+                <button type="submit"
+                    class="page-9-consult-btn font-size-16 font-weight-semibold font-color-fff">상담신청하기</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-page">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img class="img_pad" src="assets/images/icon/lsg_logo.svg" alt="LSG 로고">
+                </div>
+
+                <ul class="footer-menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">강사진</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+
+                <p class="footer-address">
+                    (주)LSG교육 · 서울특별시 강남구 테헤란로 00길 00 LSG BUILDING 10F<br>
+                    대표번호 02-1234-5678 · 사업자등록번호 123-45-67890 · 통신판매업신고 2026-서울강남-0000
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-sns">
+                    <a href="#" aria-label="페이스북" class="font-size-16 font-weight-bold font-color-fff">f</a>
+                    <a href="#" aria-label="인스타그램" class="font-size-16 font-weight-bold font-color-fff">◎</a>
+                    <a href="#" aria-label="유튜브" class="font-size-16 font-weight-bold font-color-fff">▶</a>
+                </div>
+                <p class="footer-copy">Copyright ⓒ 2026 LSG PASS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        const menuButton = document.querySelector('.menu_btn');
+        const menu = document.querySelector('#site-menu');
+
+        if (menuButton && menu) {
+            const closeMenu = () => {
+                menu.classList.remove('active');
+                menuButton.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
+            };
+
+            menuButton.addEventListener('click', () => {
+                const isOpen = menu.classList.toggle('active');
+                menuButton.setAttribute('aria-expanded', String(isOpen));
+                document.body.classList.toggle('menu-open', isOpen);
+            });
+
+            menu.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', closeMenu);
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener('click', (event) => {
+                if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+                    closeMenu();
+                }
+            });
+        }
+
+        const lecturerMarquee = document.querySelector('.lecturer-marquee');
+        const lecturerGroup = lecturerMarquee?.querySelector('.lecturer-group');
+
+        if (lecturerMarquee && lecturerGroup) {
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            const finePointerMedia = window.matchMedia('(hover: hover) and (pointer: fine)');
+            const originalCards = Array.from(lecturerGroup.children);
+            const originalCount = originalCards.length;
+            let isPaused = false;
+            let isDragging = false;
+            let animationId = null;
+            let dragStartX = 0;
+            let dragStartScrollLeft = 0;
+
+            const makeCloneSet = () => {
+                const fragment = document.createDocumentFragment();
+
+                originalCards.forEach((card) => {
+                    const clone = card.cloneNode(true);
+                    clone.setAttribute('aria-hidden', 'true');
+                    fragment.appendChild(clone);
+                });
+
+                return fragment;
+            };
+
+            lecturerGroup.prepend(makeCloneSet());
+            lecturerGroup.append(makeCloneSet());
+
+            const getGap = () => {
+                const styles = window.getComputedStyle(lecturerGroup);
+                return parseFloat(styles.columnGap || styles.gap || 0);
+            };
+
+            const getMiddleSetWidth = () => {
+                const cards = Array.from(lecturerGroup.children).slice(originalCount, originalCount * 2);
+                const totalWidth = cards.reduce((sum, card) => sum + card.getBoundingClientRect().width, 0);
+                return totalWidth + (getGap() * Math.max(cards.length - 1, 0));
+            };
+
+            const normalizePosition = () => {
+                const setWidth = getMiddleSetWidth();
+
+                if (!setWidth) return;
+
+                if (lecturerMarquee.scrollLeft < setWidth * 0.5) {
+                    lecturerMarquee.scrollLeft += setWidth;
+                } else if (lecturerMarquee.scrollLeft > setWidth * 1.5) {
+                    lecturerMarquee.scrollLeft -= setWidth;
+                }
+            };
+
+            const setInitialPosition = () => {
+                const setWidth = getMiddleSetWidth();
+                lecturerMarquee.scrollLeft = setWidth;
+            };
+
+            const autoScroll = () => {
+                if (!prefersReducedMotion.matches && finePointerMedia.matches && !isPaused && !isDragging) {
+                    lecturerMarquee.scrollLeft += 0.45;
+                    normalizePosition();
+                }
+
+                animationId = window.requestAnimationFrame(autoScroll);
+            };
+
+            const stopAutoScroll = () => {
+                if (animationId) {
+                    window.cancelAnimationFrame(animationId);
+                    animationId = null;
+                }
+            };
+
+            const startAutoScroll = () => {
+                if (!animationId) {
+                    animationId = window.requestAnimationFrame(autoScroll);
+                }
+            };
+
+            lecturerMarquee.addEventListener('scroll', normalizePosition, { passive: true });
+            lecturerMarquee.addEventListener('mouseenter', () => { isPaused = true; });
+            lecturerMarquee.addEventListener('mouseleave', () => { isPaused = false; });
+            lecturerMarquee.addEventListener('focusin', () => { isPaused = true; });
+            lecturerMarquee.addEventListener('focusout', () => { isPaused = false; });
+            lecturerMarquee.addEventListener('touchstart', () => { isPaused = true; }, { passive: true });
+            lecturerMarquee.addEventListener('touchend', () => { isPaused = false; }, { passive: true });
+
+            lecturerMarquee.addEventListener('pointerdown', (event) => {
+                if (event.pointerType !== 'mouse') return;
+
+                isDragging = true;
+                isPaused = true;
+                dragStartX = event.clientX;
+                dragStartScrollLeft = lecturerMarquee.scrollLeft;
+                lecturerMarquee.classList.add('is-dragging');
+            });
+
+            window.addEventListener('pointermove', (event) => {
+                if (!isDragging) return;
+
+                const distance = event.clientX - dragStartX;
+                lecturerMarquee.scrollLeft = dragStartScrollLeft - distance;
+                normalizePosition();
+            });
+
+            window.addEventListener('pointerup', () => {
+                if (!isDragging) return;
+
+                isDragging = false;
+                isPaused = false;
+                lecturerMarquee.classList.remove('is-dragging');
+            });
+
+            window.addEventListener('resize', () => {
+                setInitialPosition();
+            });
+
+            setInitialPosition();
+            startAutoScroll();
+        }
+    </script>
 
 </body>
 
