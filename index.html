@@ -319,6 +319,10 @@
                 </div>
                 <div class="page-4-review-card-2">
                     <div class="page-4-review-card">
+                                                <div class="page-4-card-img">
+                            <img src="assets/images/icon/leelarm.svg" alt="연세대학교 이람 합격생 사진">
+                            <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
+                        </div>
                         <div class="page-4-review-card-text">
                             <p class="font-size-14-16 font-color-1A1209 font-weight-medium page-4-">연세대학교 이*람 </p>
                             <p class="font-size-16-18 font-color-1A1209 font-weight-light">
@@ -326,10 +330,7 @@
                                 <br>었어요. 강의 퀄리티도 괜찮고, 시험 준비할 때 필요한 내용을 빠르게<br>찾아 들을 수 있어서 실제 공부에 큰 도움이 됐습니다.
                             </p>
                         </div>
-                        <div class="page-4-card-img">
-                            <img src="assets/images/icon/leelarm.svg" alt="연세대학교 이람 합격생 사진">
-                            <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
-                        </div>
+    
 
 
                     </div>
@@ -354,7 +355,10 @@
                 </div>
                 <div class="page-4-review-card-4">
                     <div class="page-4-review-card">
-
+                         <div class="page-4-card-img">
+                            <img src="assets/images/icon/jhohyo.svg" alt="중앙대학교 조현 합격생 사진">
+                            <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
+                        </div>
 
                         <div class="page-4-review-card-text">
                             <p class="font-size-14-16 font-color-1A1209 font-weight-medium page-4-">중앙대학교 조*현</p>
@@ -363,10 +367,7 @@
                                 있어서 효율적이었습니다. 강의도 이해하기 쉽게 구성되어<br> 있어서 혼자 공부할 때 부족했던 부분을 채우는 데 큰 도움이 됐어요.
                             </p>
                         </div>
-                        <div class="page-4-card-img">
-                            <img src="assets/images/icon/jhohyo.svg" alt="중앙대학교 조현 합격생 사진">
-                            <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
-                        </div>
+                       
 
 
                     </div>
@@ -591,7 +592,8 @@
                 </div>
             </div>
 
-            <p class="page-8-period font-size-12 font-color-333">이벤트 기간 : 2026.03.01(일) ~ 2026.03.31(화) · 발표일 : 4월 첫째 주</p>
+            <p class="page-8-period font-size-12 font-color-333">이벤트 기간 : 2026.03.01(일) ~ 2026.03.31(화) · 발표일 : 4월 첫째 주
+            </p>
         </div>
     </section>
 
@@ -665,14 +667,30 @@
 
             <div class="footer-right">
                 <div class="footer-sns">
-                    <a href="#" aria-label="페이스북" class="font-size-16 font-weight-bold font-color-fff">f</a>
-                    <a href="#" aria-label="인스타그램" class="font-size-16 font-weight-bold font-color-fff">◎</a>
-                    <a href="#" aria-label="유튜브" class="font-size-16 font-weight-bold font-color-fff">▶</a>
+                    <a href="#" aria-label="페이스북" class="font-size-16 font-weight-bold font-color-fff"><img
+                            src="assets/images/icon/facebook.svg" alt=""></a>
+                    <a href="#" aria-label="인스타그램" class="font-size-16 font-weight-bold font-color-fff"><img
+                            src="assets/images/icon/st.svg" alt=""></a>
+                    <a href="#" aria-label="유튜브" class="font-size-16 font-weight-bold font-color-fff"><img
+                            src="assets/images/icon/youtube.svg" alt=""></a>
+                    <a href="#" aria-label="블로그" class="font-size-16 font-weight-bold font-color-fff"><img
+                            src="assets/images/icon/blog.svg" alt=""></a>
                 </div>
-                <p class="footer-copy">Copyright ⓒ 2026 LSG PASS. All rights reserved.</p>
+  
+                <div class="footer-legal">
+                    <img src="assets/images/icon/toss.png" alt="토스페이 로고">
+                    <img src="assets/images/icon/isms.png" alt="ISMS 인증 로고">
+                </div>
             </div>
         </div>
     </footer>
+
+    <button class="to-top-btn" type="button" aria-label="맨 위로 이동">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor"
+                d="M12 6.3l-7.1 7.1a1 1 0 0 0 1.4 1.4L12 9.1l5.7 5.7a1 1 0 0 0 1.4-1.4L12 6.3z"></path>
+        </svg>
+    </button>
 
 
 
@@ -833,6 +851,77 @@
 
             setInitialPosition();
             startAutoScroll();
+        }
+
+        const navLinks = Array.from(document.querySelectorAll('.navi a[href^="#"]'));
+        const toTopButton = document.querySelector('.to-top-btn');
+
+        const getHeaderOffset = () => {
+            const styles = window.getComputedStyle(document.documentElement);
+            const headerHeight = parseFloat(styles.getPropertyValue('--header-height')) || 0;
+            return headerHeight + 20;
+        };
+
+        const sections = navLinks
+            .map((link) => {
+                const id = link.getAttribute('href')?.slice(1);
+                const section = id ? document.getElementById(id) : null;
+                return section ? { link, section } : null;
+            })
+            .filter(Boolean);
+
+        const setActiveLink = (activeLink) => {
+            navLinks.forEach((link) => {
+                link.classList.toggle('is-active', link === activeLink);
+                if (link === activeLink) {
+                    link.setAttribute('aria-current', 'true');
+                } else {
+                    link.removeAttribute('aria-current');
+                }
+            });
+        };
+
+        const updateScrollUI = () => {
+            const offset = getHeaderOffset();
+            const y = window.scrollY + offset;
+
+            let active = null;
+            for (const item of sections) {
+                if (item.section.offsetTop <= y) {
+                    active = item.link;
+                }
+            }
+
+            setActiveLink(active);
+
+            if (toTopButton) {
+                const shouldShow = window.scrollY > 600;
+                toTopButton.classList.toggle('is-visible', shouldShow);
+            }
+        };
+
+        window.addEventListener('scroll', updateScrollUI, { passive: true });
+        window.addEventListener('resize', updateScrollUI);
+        updateScrollUI();
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                const hash = link.getAttribute('href');
+                if (!hash || hash === '#') return;
+
+                const target = document.querySelector(hash);
+                if (!target) return;
+
+                event.preventDefault();
+                const top = target.getBoundingClientRect().top + window.scrollY - getHeaderOffset();
+                window.scrollTo({ top, behavior: 'smooth' });
+            });
+        });
+
+        if (toTopButton) {
+            toTopButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
         }
     </script>
 

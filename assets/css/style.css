@@ -556,6 +556,8 @@ p {
     padding: 24px;
 }
 
+
+
 .page-4-card-img {
     position: relative;
     display: inline-block;
@@ -575,16 +577,20 @@ p {
     transform: translateX(-50%);
 }
 
+.page-4-review-card-1 {
+    margin-left: 0;
+}
+
 .page-4-review-card-2 {
-    margin-left: 410px;
+    margin-left: auto;
 }
 
 .page-4-review-card-3 {
-    margin-left: 60px;
+    margin-left: 0;
 }
 
 .page-4-review-card-4 {
-    margin-left: 350px;
+    margin-left: auto;
 }
 
 /* ========================= PAGE 5 ========================= */
@@ -1086,8 +1092,19 @@ p {
     width: 34px;
     height: 34px;
     border-radius: 999px;
-    background: #8f8f8f;
+    
     text-decoration: none;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-legal img {
+    height: 32px;
+    width: auto;
 }
 
 /* ========================= TABLET (1024px) ========================= */
@@ -2234,7 +2251,7 @@ button {
         font-size: 13px !important;
         line-height: 1.6;
         display: -webkit-box;
-        -webkit-line-clamp: 4;
+        
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -2328,9 +2345,6 @@ button {
         gap: 12px;
     }
 
-    .page-4-review-card-text p:last-child {
-        -webkit-line-clamp: 3;
-    }
 
     .page-6-card {
         padding: 20px 16px 16px;
@@ -2537,10 +2551,7 @@ body.menu-open {
         justify-self: start;
     }
 
-    .page-4-review-card-text p:last-child,
-    .page-5-review-card-text p:last-child {
-        -webkit-line-clamp: 4;
-    }
+
 
     .page-6-card-list {
         grid-template-columns: 1fr;
@@ -2591,7 +2602,7 @@ body.menu-open {
 
     .page-4-review-card-text p:last-child,
     .page-5-review-card-text p:last-child {
-        -webkit-line-clamp: 3;
+
         font-size: 12.5px !important;
     }
 
@@ -2834,7 +2845,7 @@ body.menu-open {
         font-size: 13px !important;
         line-height: 1.6;
         display: -webkit-box;
-        -webkit-line-clamp: 4;
+
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -2877,7 +2888,7 @@ body.menu-open {
     }
 
     .page-4-review-card-text p:last-child {
-        -webkit-line-clamp: 3;
+       
         font-size: 12.5px !important;
     }
 
@@ -2951,7 +2962,7 @@ body.menu-open {
     line-height: 1.55;
     word-break: keep-all;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -3094,7 +3105,7 @@ body.menu-open {
     .page-4-review-card-text p:last-child {
         font-size: 13px !important;
         line-height: 1.6;
-        -webkit-line-clamp: 4;
+
     }
 
     .page-6-card-list {
@@ -3375,6 +3386,78 @@ body.menu-open {
 @media (prefers-reduced-motion: reduce) {
     .lecturer-marquee {
         scroll-behavior: auto;
+    }
+}
+
+/* ========================= NAV SCROLLSPY + TO TOP ========================= */
+.navi a {
+    position: relative;
+}
+
+.navi a.is-active {
+    opacity: 1;
+}
+
+.navi a.is-active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 3px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.to-top-btn {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(23, 23, 27, 0.92);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 1200;
+}
+
+.to-top-btn.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.to-top-btn:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.72);
+    outline-offset: 3px;
+}
+
+.to-top-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 768px) {
+    .to-top-btn {
+        right: 14px;
+        bottom: 14px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .navi a.is-active::after {
+        bottom: -6px;
+        width: 54%;
     }
 }
 
