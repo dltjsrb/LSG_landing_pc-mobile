@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -194,7 +196,7 @@
 
             <div class="page-3-card-group">
                 <!-- 카드 1: 강기영 -->
-                <div class="page-3-card">
+                <div class="page-3-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div class="page-3-card-photo">
                         <img class="img_pad" src="assets/images/icon/ganggiyong.svg" alt="강기영 수석 사진">
                     </div>
@@ -215,7 +217,7 @@
                 </div>
 
                 <!-- 카드 2: 최종원 (이미지 오른쪽) -->
-                <div class="page-3-card page-3-card-right">
+                <div class="page-3-card page-3-card-right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="page-3-card-text font-color-fff font-weight-bold font-size-14-17">
                         <div class="page-3-badge-group">
                             <span class="page-3-badge-1">문과 수석</span>
@@ -236,7 +238,7 @@
                 </div>
 
                 <!-- 카드 3: 이준우 -->
-                <div class="page-3-card">
+                <div class="page-3-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <div class="page-3-card-photo">
                         <img class="img_pad" src="assets/images/icon/lgo.svg" alt="이준우 합격생 사진">
                     </div>
@@ -299,7 +301,7 @@
 
             <div class="page-4-review-list">
                 <div class="page-4-review-card-1">
-                    <div class="page-4-review-card">
+                    <div class="page-4-review-card wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">
 
                         <div class="page-4-card-img">
                             <img src="assets/images/icon/kimmin.svg" alt="서울대학교 김민 합격생 사진">
@@ -318,7 +320,7 @@
                     </div>
                 </div>
                 <div class="page-4-review-card-2">
-                    <div class="page-4-review-card">
+                    <div class="page-4-review-card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                                                 <div class="page-4-card-img">
                             <img src="assets/images/icon/leelarm.svg" alt="연세대학교 이람 합격생 사진">
                             <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
@@ -336,7 +338,7 @@
                     </div>
                 </div>
                 <div class="page-4-review-card-3">
-                    <div class="page-4-review-card">
+                    <div class="page-4-review-card wow slideInRight" data-wow-duration="1s" data-wow-delay="0.4s">
 
                         <div class="page-4-card-img">
                             <img src="assets/images/icon/hajin.svg" alt="경희대학교 하진 합격생 사진">
@@ -354,7 +356,7 @@
                     </div>
                 </div>
                 <div class="page-4-review-card-4">
-                    <div class="page-4-review-card">
+                    <div class="page-4-review-card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
                          <div class="page-4-card-img">
                             <img src="assets/images/icon/jhohyo.svg" alt="중앙대학교 조현 합격생 사진">
                             <p class="font-weight-medium font-size-14-16 font-color-1A1209 page-4-success-right">합격</p>
@@ -923,6 +925,18 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
     </script>
 
 </body>
