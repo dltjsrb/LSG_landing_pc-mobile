@@ -241,3 +241,27 @@ body {
         font-size: 1.125rem;
     }
 }
+
+
+/* =========================
+   5) 프로젝트 전용 텍스트 유틸리티
+   - 글자 크기/색/굵기는 commons.css에서만 관리
+========================= */
+.font-weight-extrabold {
+    font-family: 'Pretendard';
+    font-weight: 800;
+}
+
+.font-color-muted {
+    color: var(--color-text-muted);
+}
+
+.font-size-results-title {
+    font-size: clamp(2.5rem, 2rem + 1.4vw, 3.75rem);
+}
+
+@media (max-width: 48rem) {
+    .font-size-results-title {
+        font-size: clamp(1.5rem, 5.8vw, 2rem);
+    }
+}
